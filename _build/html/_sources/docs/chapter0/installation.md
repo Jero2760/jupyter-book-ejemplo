@@ -35,15 +35,15 @@ Para instalar `jupyter-book` desde pip, se utiliza el siguiente comando:
 pip install -U jupyter-book
 ```
 
-:::{admonition,warning} A note for Windows users
+:::{admonition,warning} Nota para usuarios de Windows
 
-Jupyter Book is now also tested against Windows OS 😀
+Jupyter Book ha sido testado con Windows OS 😀
 
-However, there is a known incompatibility for notebook execution, when using Python 3.8.
+Sin embargo, existe una incompatibilidad, ya conocida, para ejecutar ficehros notebooks con Python 3.8.
 
 <!---See [](working-on-windows)--->
 
-See [Working on Windows](https://jupyterbook.org/advanced/advanced.html#working-on-windows)
+Ver [Working on Windows](https://jupyterbook.org/advanced/advanced.html#working-on-windows)
 
 :::
 
