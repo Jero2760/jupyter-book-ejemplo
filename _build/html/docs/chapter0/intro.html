@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>¿Cómo crear libros interactivos con Jupyter Book? &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
+    <title>¿Cómo crear un libro interactivo con Jupyter Book?</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
@@ -41,7 +41,6 @@
     <link rel="canonical" href="https://jupyterbook.org/docs/chapter0/intro.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1. Instalación" href="installation.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -64,68 +63,8 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<div class="col-12 col-md-2 bd-sidebar site-navigation show single-page" id="site-navigation">
     
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../../index.html">
-  
-  <img src="../../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">¿Cómo crear un libro interactivo con Jupyter Book?</h1>
-  
-</a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <p class="caption">
- <span class="caption-text">
-  Inicio
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="installation.html">
-   1. Instalación
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Contenido
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../chapter1/primerlibro.html">
-   1. Mi primer libro
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../chapter2/contenidos.html">
-   2. Tipos de contenidos
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../chapter3/publish.html">
-   3. Publicar el libro online
-  </a>
- </li>
-</ul>
-
-</nav>
-
- <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
 </div>
 
 
@@ -140,31 +79,10 @@
     </div>
     <div class="col pl-2 topbar-main">
         
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
         <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/chapter0/intro.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
     
 </div>
         <!-- Source interaction buttons -->
@@ -181,9 +99,7 @@
             href="https://github.com/Jero2760/jupyter-book-ejemplo/issues/new?title=Issue%20on%20page%20%2Fdocs/chapter0/intro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/Jero2760/jupyter-book-ejemplo/edit/master/docs/chapter0/intro.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+        
     </div>
 </div>
 
@@ -203,26 +119,7 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyter-book">
-   Jupyter Book
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#colabora">
-   Colabora
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#agradecimientos">
-   Agradecimientos
-  </a>
-  <ul class="nav section-nav flex-column">
-  </ul>
- </li>
-</ul>
-
+            
         </nav>
     </div>
 </div>
@@ -293,8 +190,405 @@ Esto permite además, <a class="reference external" href="https://myst-nb.readth
 <p>Jupyter Book cuenta con el soporte de una <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">comunidad abierta</a>, muchos de los cuales han participado en <a class="reference external" href="https://jupyter.org/community">the Jupyter community</a>.
 Jupyter Book y muchas de las herramientas que utiliza están promovidas por <a class="reference external" href="https://executablebooks.org">the Executable Book Project</a>, que a su vez cuenta con el apoyo de <a class="reference external" href="https://sloan.org/grant-detail/9231">the Alfred P. Sloan foundation</a>.</p>
 <div class="toctree-wrapper compound">
+<span id="document-docs/chapter0/installation"></span><div class="section" id="instalacion">
+<h3><span class="section-number">1. </span>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h3>
+<p>Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en ficheros de tipo Markdown y Jupyter Notebooks. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> convierte estos ficheros a formato HTML y PDF. De esta manera, el libro puede leerse en cualquier browser, subirlo a un servicio cloud o server host, así como imprimir y distribuir el fichero PDF generado.</p>
+<p>La utilización de Jupyter Book está especialmente indicada para crear libros interactivos que permiten ejecutar código fuente de programación utilizando Jupyter Notebooks. Esto es especialmente recomendable para libros sobre programación, aprendizaje automático (Machine Learning) e Inteligencia Artificial (AI) en general.</p>
+<div class="section" id="el-entorno-anaconda">
+<h4><span class="section-number">1.1. </span>El entorno Anaconda<a class="headerlink" href="#el-entorno-anaconda" title="Permalink to this headline">¶</a></h4>
+<p>Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es recomendable tener instalado el entorno Anaconda (o miniconda, una versión reducida que ocupa mucho menos espacio):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x">Installing Anaconda on Mac OS X</a></p></li>
+<li><p><a class="reference external" href="https://katiekodes.com/setup-python-windows-miniconda/">Setting up Python on Windows with Miniconda by Anaconda</a></p></li>
+</ul>
+</div>
+<div class="section" id="jupyter-book">
+<h4><span class="section-number">1.2. </span>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h4>
+<p>Para utilizar Jupyter Book, se puede comenzar con</p>
+<ul class="simple">
+<li><p>la guía de utilización <a class="reference external" href="https://jupyterbook.org/start/overview">getting started guide</a>,</p></li>
+<li><p>el menu de navegación de este libro (a la izquierda, en una ordenador de sobremesa), y también</p></li>
+<li><p>el libro ejemplo que se explica en los siguientes capítulos.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Jupyter Book <code class="docutils literal notranslate"><span class="pre">0.7</span></code> es una versión que reescribe completamente la versión <code class="docutils literal notranslate"><span class="pre">0.6</span></code> y tiene numerosos cambios.
+Ver <a class="reference external" href="https://github.com/executablebooks/jupyter-book/wiki/The-Jupyter-Book-Wiki">the legacy upgrade guide</a>
+para actualizaciones y <a class="reference external" href="https://legacy.jupyterbook.org">legacy.jupyterbook.org</a> para
+ver la documentación de anteriores versiones.</p>
+<p>Es importante saber que Jupyter Book todavía está en una versión pre-1.0 y, por lo tanto, previsiblemente irá incorporando cambios importantes en su API en los próximos meses.</p>
+</div>
+<p>Para instalar <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> desde pip, se utiliza el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U jupyter-book
+</pre></div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title"> A note for Windows users</p>
+<p>Jupyter Book is now also tested against Windows OS 😀</p>
+<p>However, there is a known incompatibility for notebook execution, when using Python 3.8.</p>
+<!---See [](working-on-windows)--->
+<p>See <a class="reference external" href="https://jupyterbook.org/advanced/advanced.html#working-on-windows">Working on Windows</a></p>
+</div>
+<p>Para saber más sobre Jupyter Notebooks esta es la <a class="reference external" href="https://jupyter.readthedocs.io/en/latest/content-quickstart.html">documentación oficial (en inglés)</a></p>
+<p>Sobre cómo crear el entorno de desarrollo para Jupyter Notebook, en español, puede verse <a class="reference external" href="https://www.aprendemachinelearning.com/instalar-ambiente-de-desarrollo-python-anaconda-para-aprendizaje-automatico/">Instalar entorno de desarrollo Python Anaconda para Aprendizaje Automático</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="recomendacion-jupyter-lab">
+<h4><span class="section-number">1.3. </span>Recomendación: Jupyter Lab<a class="headerlink" href="#recomendacion-jupyter-lab" title="Permalink to this headline">¶</a></h4>
+<p>Jupyter Lab es un entorno que en el futuro próximo sustituirá al clásico Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.). <a class="reference external" href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Listo para usuarios.</a></p>
+<p><a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es la nueva propuesta interactiva del <a class="reference external" href="https://jupyter.org">Proyecto Jupyter</a> que incorpora una más potente y flexible interfaz de usuario.</p>
+<p>JupyterLab permite incorporar extensiones utilizando paquetes <a class="reference external" href="https://www.npmjs.com/">npm</a> que usan APIs públicas de Jupyter. Para encontrar extensiones JupyterLab, buscar el término npm en <a class="reference external" href="https://www.npmjs.com/search?q=keywords:jupyterlab-extension">jupyterlab-extension</a> o buscar en GitHub <a class="reference external" href="https://github.com/topics/jupyterlab-extension">jupyterlab-extension</a>. Para más información sobre extensiones, ver la <a class="reference external" href="https://jupyterlab.readthedocs.io/en/latest/user/extensions.html">documentación de usuario</a>.</p>
+<p>Ver la última versión de la documentación en <a class="reference external" href="http://jupyterlab.readthedocs.io/en/latest/">ReadTheDocs</a>.</p>
+<div class="section" id="id1">
+<h5><span class="section-number">1.3.1. </span>Instalación<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
+<p>JupyterLab puede instalarse usando <code class="docutils literal notranslate"><span class="pre">conda</span></code> o <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Para instrucciones detalladas, consultar la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">installation guide</a>.</p>
+</div>
+<div class="section" id="conda">
+<h5><span class="section-number">1.3.2. </span>conda<a class="headerlink" href="#conda" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyterlab
+</pre></div>
+</div>
+</div>
+<div class="section" id="pip">
+<h5><span class="section-number">1.3.3. </span>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab
+</pre></div>
+</div>
+<div class="section" id="instalacion-con-versiones-anteriores-de-jupyter-notebook">
+<h6><span class="section-number">1.3.3.1. </span>Instalación con versiones anteriores de Jupyter Notebook<a class="headerlink" href="#instalacion-con-versiones-anteriores-de-jupyter-notebook" title="Permalink to this headline">¶</a></h6>
+<p>Cuando se usan versions de Jupyter Notebook anteriores a la versión 5.3, después de instalarse JupyterLab debe ejecutarse el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter serverextension <span class="nb">enable</span> --py jupyterlab --sys-prefix
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ejecutar-jupyterlab">
+<h5><span class="section-number">1.3.4. </span>Ejecutar JupyterLab<a class="headerlink" href="#ejecutar-jupyterlab" title="Permalink to this headline">¶</a></h5>
+<p>Para iniciar JupyterLab se usa el comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter lab
+</pre></div>
+</div>
+<p>JupyterLab se abrirá automaticamente en el browser. Ver la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html">documentación</a> para mayor información.</p>
+<p>Si encuentra un error tipo “Command ‘jupyter’ not found”, puede ser que la variable de entorno <code class="docutils literal notranslate"><span class="pre">PATH</span></code> no tenga la información correcta. Como alternativa, se puede arrancar JupyterLab usando <code class="docutils literal notranslate"><span class="pre">~/.local/bin/jupyter</span> <span class="pre">lab</span></code> sin cambiar la variable de entorno <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+</div>
+<div class="section" id="browsers-soportados">
+<h5><span class="section-number">1.3.5. </span>Browsers soportados<a class="headerlink" href="#browsers-soportados" title="Permalink to this headline">¶</a></h5>
+<p>Las últimas versiones de los siguientes browsers funcionan con Jupyter Lab:</p>
+<ul class="simple">
+<li><p>Firefox</p></li>
+<li><p>Chrome</p></li>
+<li><p>Safari</p></li>
+</ul>
+<p>Ver la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html">documentación</a> para más información.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="toctree-wrapper compound">
+<span id="document-docs/chapter1/primerlibro"></span><div class="section" id="mi-primer-libro">
+<h3><span class="section-number">1. </span>Mi primer libro<a class="headerlink" href="#mi-primer-libro" title="Permalink to this headline">¶</a></h3>
+<p>Una vez que tenemos instalado <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda Python</a>, tal y como hemos visto en el <a class="reference internal" href="docs/chapter0/intro.html#document-docs/chapter0/installation"><span class="doc std std-doc">capítulo inicial</span></a>, ya podemos crear nuestro primer libro.</p>
+<div class="section" id="libro-ejemplo">
+<h4><span class="section-number">1.1. </span>Libro ejemplo<a class="headerlink" href="#libro-ejemplo" title="Permalink to this headline">¶</a></h4>
+<p>Para ello, vamos a partir de <a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/index.html">un breve ejemplo</a> de un libro interactivo creado con Jupyter Book.</p>
+<p>Algunas de las funcionalidades incluidas en este libro son:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#version-1">Jupyter notebooks</a></p></li>
+<li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/about_py.html#bibliography">Referencias bibliográficas</a></p></li>
+<li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#another-application">Ecuaciones matemáticas, numeradas para referenciar</a></p></li>
+<li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/getting_started.html#jupyter-notebooks">Figuras, numeradas para referenciar</a> con leyendas explicativas y referencias cruzadas</p></li>
+</ul>
+<p>Los ficheros se encuentran <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/">alojados en GitHub</a>
+en la carpeta <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/tree/master/mini_book/docs">docs</a>.
+El contenido está escrito en <a class="reference external" href="https://jupyterbook.org/content/myst">MyST markdown</a>, una extensión de Jupyter notebook markdown que permite incluir markup científico. Igualmente, podrían estar escritos en Jupyter notebooks.</p>
+<p><strong>Construir el libro ejemplo</strong></p>
+<p>Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos siguientes:</p>
+<ol>
+<li><p>En primer lugar, vamos a crear un entorno virtual de trabajo donde instalar las librerías necesarias de Python para ejecutar el código fuente de nuestro primer libro. Una forma sencilla de hacerlo es a través de un fichero environment.yml, como veremos a continuación.</p></li>
+<li><p>Clonamos el repositorio de Github que contiene los ficheros del libro ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/executablebooks/quantecon-mini-example
+<span class="nb">cd</span> quantecon-mini-example
+</pre></div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Ver <a class="reference external" href="https://jupyterbook.org/start/overview">la página getting started</a> para más información.</p>
+</div>
+</li>
+<li><p>Instalamos las librerías Python necesarias utilizando <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/blob/master/environment.yml">este fichero <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file</a>.
+Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>name: qe-mini-example
+channels:
+  - default
+dependencies:
+  - <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7
+  - <span class="nv">sphinx</span><span class="o">=</span><span class="m">2</span>.4.4
+  - pip
+  - pandas
+  - matplotlib
+  - pip:
+    - quantecon
+    - jupyter-book
+</pre></div>
+</div>
+<p>La instalación se lleva a cabo en Terminal, con los comandos:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda env create -f environment.yml
+conda activate qe-mini-example
+</pre></div>
+</div>
+</li>
+</ol>
+<p>De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí qe-mini-example, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.</p>
+<ol>
+<li><p>Ejecutar Jupyter Book para generar el libro ejemplo</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build mini_book/
+</pre></div>
+</div>
+</li>
+<li><p>Ver el resultado en cualquier browser haciendo doble-click en el fichero <code class="docutils literal notranslate"><span class="pre">html</span></code> siguiente:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mini_book/_build/html/index.html
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en <code class="docutils literal notranslate"><span class="pre">mini_book/docs</span></code>. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando <code class="docutils literal notranslate"><span class="pre">build</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build mini_book/
+</pre></div>
+</div>
+<div class="section" id="mas-informacion">
+<h5><span class="section-number">1.1.1. </span>Más información<a class="headerlink" href="#mas-informacion" title="Permalink to this headline">¶</a></h5>
+<p>Ver <a class="reference external" href="https://executablebooks.github.io/quantecon-example/docs/index.html">el libro completo en QuantEcon</a>
+con todo el contenido de un Jupyter Book con diversos casos de uso.</p>
+<p>Para más información sobre el proyecto Jupyter Book, ver toda la documentación en <a class="reference external" href="https://ebp.jupyterbook.org/">The Executable Book Project</a>.</p>
+</div>
+</div>
+</div>
+<span id="document-docs/chapter2/contenidos"></span><div class="section" id="tipos-de-contenidos">
+<h3><span class="section-number">2. </span>Tipos de contenidos<a class="headerlink" href="#tipos-de-contenidos" title="Permalink to this headline">¶</a></h3>
+<p>Existen diversos modos de escribir contenido en Jupyter Book. Este capítulo presenta algunas maneras de hacerlo, tanto en ficheros Jupyter Notebooks (.ipynb) como en ficheros markdown (.md)</p>
+<div class="toctree-wrapper compound">
+<span id="document-docs/chapter2/markdown"></span><div class="section" id="ficheros-markdown-md">
+<h4><span class="section-number">2.1. </span>Ficheros Markdown (.md)<a class="headerlink" href="#ficheros-markdown-md" title="Permalink to this headline">¶</a></h4>
+<p>Tanto si el contenido del libro se escribe en Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) como en
+estándar markdown (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), utilizamos <strong>MyST Markdown</strong>.</p>
+<div class="section" id="que-es-myst">
+<h5><span class="section-number">2.1.1. </span>¿Qué es MyST?<a class="headerlink" href="#que-es-myst" title="Permalink to this headline">¶</a></h5>
+<p>MyST significa “Markedly Structured Text”. Se trata de una ligera variante de un tipo de
+markdown llamado “CommonMark”, con algunas extensiones que permiten añadir <strong>roles</strong> y <strong>directivas</strong>
+en el ecosistema de documentación Sphinx.</p>
+</div>
+<div class="section" id="que-son-roles-y-directivas">
+<h5><span class="section-number">2.1.2. </span>¿Qué son roles y directivas?<a class="headerlink" href="#que-son-roles-y-directivas" title="Permalink to this headline">¶</a></h5>
+<p>Roles y directivas son dos potentes herramientas de Jupyter Book similares a las funciones, pero escritas en un lenguaje de markup. Ambas buscan un propósito similar, pero los <strong>roles se escriben en una sola línea</strong> mientras que las <strong>directivas ocupan varias líneas</strong>.</p>
+<div class="section" id="uso-de-directivas">
+<h6><span class="section-number">2.1.2.1. </span>Uso de directivas<a class="headerlink" href="#uso-de-directivas" title="Permalink to this headline">¶</a></h6>
+<p>La forma más simple de insertar una directiva en el contenido de un libro es la siguiente:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{midirectiva}
+Contenido de mi directiva
+```
+</pre></div>
+</div>
+<p>Esto sólo funciona si existiera una directiva de nombre <code class="docutils literal notranslate"><span class="pre">midirectiva</span></code>
+(que no existe, por supuesto). Existen muchas directivas predefinidas asociadas con
+Jupyter Book. Por ejemplo, para insertar una caja con una nota, se puede hacer con la directiva siguiente:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+Aquí hay una nota
+```
+</pre></div>
+</div>
+<p>Que se visualiza como:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Aquí hay una nota</p>
+</div>
+<p>Cuando se genera el lbro con el comando <code class="docutils literal notranslate"><span class="pre">jupyterbook</span> <span class="pre">build</span></code>.</p>
+<p>Para moás información sobre directivas, ver la
+<a class="reference external" href="https://myst-parser.readthedocs.io/">documentación sobre MyST</a>.</p>
+</div>
+<div class="section" id="uso-de-roles">
+<h6><span class="section-number">2.1.2.2. </span>Uso de roles<a class="headerlink" href="#uso-de-roles" title="Permalink to this headline">¶</a></h6>
+<p>Los roles son similares a las directivas, pero se escriben en una sola línea. Para insertar un rol en un libro se hace siguiendo este formato:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Algún texto {rolename}`Este es mi texto!`
+</pre></div>
+</div>
+<p>Como con las directivas, los roles sólo funcionan si el nombre <code class="docutils literal notranslate"><span class="pre">rolename</span></code> es válido. Por ejemplo, un nombre válido es <code class="docutils literal notranslate"><span class="pre">doc</span></code> y se usa para hacer referencia a otra página del libro. Así, puede utilizarse el encaminamiento relativo a la página de introducción, mediante la sintaxis <code class="docutils literal notranslate"><span class="pre">{doc}`../chapter0/intro`</span></code> que se visualizará como este texto con enlace a dicha página: <a class="reference internal" href="docs/chapter0/intro.html#document-docs/chapter0/intro"><span class="doc">¿Cómo crear libros interactivos con Jupyter Book?</span></a>.</p>
+<p>Para más información sobre roles, ver la
+<a class="reference external" href="https://myst-parser.readthedocs.io/">documentación sobre MyST</a>.</p>
+</div>
+<div class="section" id="uso-de-referencias-bibliograficas">
+<h6><span class="section-number">2.1.2.3. </span>Uso de referencias bibliográficas<a class="headerlink" href="#uso-de-referencias-bibliograficas" title="Permalink to this headline">¶</a></h6>
+<p>Se pueden citar referencias que estén almacenadas en un fichero <code class="docutils literal notranslate"><span class="pre">bibtex</span></code>. Por ejemplo,
+la sintaxis siguiente: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code>se visualizará como: <a class="bibtex reference internal" href="docs/chapter0/intro.html#holdgraf-evidence-2014" id="id1">[HdHPK14]</a>.</p>
+<p>Para insertar la bibliografía se utiliza la directiva <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code>. Esta directiva debe ser utilizada para todos los roles <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> para su correcta visualización.
+En el libro ejemplo las referencias están almacenadas en el fichero <code class="docutils literal notranslate"><span class="pre">references.bib</span></code> y la bibliografía se incluye con:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{bibliography} references.bib
+```
+</pre></div>
+</div>
+<p>Que resulta en la siguiente visualización:</p>
+<p id="bibtex-bibliography-docs/chapter2/markdown-0"><dl class="citation">
+<dt class="bibtex label" id="holdgraf-evidence-2014"><span class="brackets"><a class="fn-backref" href="#id1">HdHPK14</a></span></dt>
+<dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
+</dd>
+</dl>
+</p>
+</div>
+<div class="section" id="ejecucion-de-codigo-en-un-fichero-markdown">
+<h6><span class="section-number">2.1.2.4. </span>Ejecución de código en un fichero markdown<a class="headerlink" href="#ejecucion-de-codigo-en-un-fichero-markdown" title="Permalink to this headline">¶</a></h6>
+<p>Jupyter Book usa <em>jupytext</em> para ejecutar código de programación en ficheros markdown. Para más información, ver la <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/formats.html">documentación Jupytext</a></p>
+<p>En primer lugar, se añaden Jupytext metadata al fichero markdown que contenga el código que queramos ajecutar. Por ejemplo, para añadir Jupytext metadata a esta página <code class="docutils literal notranslate"><span class="pre">markdown.md</span></code>, utilizando un kernel python3, hay que ejecutar el comando:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">docs</span><span class="o">/</span><span class="n">chapter2</span><span class="o">/</span><span class="n">markdown</span><span class="o">.</span><span class="n">md</span> <span class="o">--</span><span class="n">kernel</span> <span class="n">python3</span>
+
+</pre></div>
+</div>
+<p>que genera el header siguiente en el fichero <code class="docutils literal notranslate"><span class="pre">markdown.md</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupytext:
+  cell_metadata_filter: -all
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: <span class="m">0</span>.12
+    jupytext_version: <span class="m">1</span>.6.0
+kernelspec:
+  display_name: Python <span class="m">3</span>
+  language: python
+  name: python3
+</pre></div>
+</div>
+<p>A continuación se añade la directiva <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> con el código que queramos ejecutar:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell}
+a = &quot;Este es un texto&quot;
+b = &quot;en código Python&quot;
+print(f&quot;{a} {b}&quot;)
+```
+</pre></div>
+</div>
+<p>Cuando se genera el libro con el comando <code class="docutils literal notranslate"><span class="pre">jupyterbook</span> <span class="pre">build</span></code>, el contenido del bloque <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> se ejecutará en el kernel Jupyter (en este caso python3) y el output se visualizará junto con el resto del libro.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Este es un texto&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;en código Python&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Este es un texto en código Python
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para más información sobre ejecución de código en ficheros markdown, ver la <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/use/markdown.html">documentación MyST-NB</a>.</p>
+</div>
+</div>
+</div>
+<span id="document-docs/chapter2/notebooks"></span><div class="section" id="jupyter-notebooks-ipynb">
+<h4><span class="section-number">2.2. </span>Jupyter Notebooks (.ipynb)<a class="headerlink" href="#jupyter-notebooks-ipynb" title="Permalink to this headline">¶</a></h4>
+<p>Los ficheros Jupyter Notebooks (.ipynb) también pueden añadirse a nuestro libro,
+permitiendo la visualización y ejecución de bloques de código y sus outputs.</p>
+<div class="section" id="celdas-markdown">
+<h5><span class="section-number">2.2.1. </span>Celdas markdown<a class="headerlink" href="#celdas-markdown" title="Permalink to this headline">¶</a></h5>
+<p>Permiten insertar imágenes, video, código HTML, etc. Ejemplo, esta imagen:</p>
+<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo.png" /></p>
+<p>También podemos insertar <span class="math notranslate nohighlight">\(add_{math}\)</span> y</p>
+<div class="math notranslate nohighlight">
+\[
+math^{blocks}
+\]</div>
+<p>o también</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\mbox{mean} la_{tex} \\ \\
+math blocks
+\end{aligned}
+\end{split}\]</div>
+</div>
+<div class="section" id="celdas-myst-markdown">
+<h5><span class="section-number">2.2.2. </span>Celdas MyST markdown<a class="headerlink" href="#celdas-myst-markdown" title="Permalink to this headline">¶</a></h5>
+<p>Las celdas MyST markdown funcionan en Jupyter Notebooks de modo similar. Para más información sobre MyST markdown, ver
+<a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
+y <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
+</div>
+<div class="section" id="celdas-de-codigo-y-outputs">
+<h5><span class="section-number">2.2.3. </span>Celdas de código y outputs<a class="headerlink" href="#celdas-de-codigo-y-outputs" title="Permalink to this headline">¶</a></h5>
+<p>Jupyter Book permite la visualización de los bloques de código y outputs de los ficheros .ipynb.
+Por ejemplo, esta es una muestra de código que utiliza Matplotlib:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
+<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
+
+
+<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
+<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_build/jupyter_execute/docs/chapter0/notebooks_2_0.png" src="_build/jupyter_execute/docs/chapter0/notebooks_2_0.png" />
+</div>
+</div>
+<p>Las posibilidades son muy diversas e incluyen el uso de outputs que permiten la interactividad en la lectura del libro
+Para más información, ver <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+</div>
+</div>
+</div>
+</div>
+<span id="document-docs/chapter3/publish"></span><div class="section" id="publicar-el-libro-online">
+<h3><span class="section-number">3. </span>Publicar el libro online<a class="headerlink" href="#publicar-el-libro-online" title="Permalink to this headline">¶</a></h3>
+<p>Una vez generado nuestro libro, podemos subirlo a la nube, alojarlo en su servidor web y hacer que esté disponible para su lectura online. Puesto que el libro que hemos creado es, técnicamente, una página web estática, la mejor manera de lograrlo es a través de un servicio de alojamiento de <strong>páginas web estáticas</strong>. Hay muchas maneras de hacer esto y la siguientes secciones repasan las más habituales.</p>
+<div class="section" id="crear-un-repositorio-online-para-nuestro-libro">
+<h4><span class="section-number">3.1. </span>Crear un repositorio online para nuestro libro<a class="headerlink" href="#crear-un-repositorio-online-para-nuestro-libro" title="Permalink to this headline">¶</a></h4>
+<p>Vamos a utilizar Github para crear nuestro repositorio online y subir el contenido del libro que hemos creado.</p>
+<ol>
+<li><p>Primero, hacer log-in en nuestro GitHub y crear un nuevo repositorio en la página “create a new repository”: <a class="reference external" href="https://github.com/new">https://github.com/new</a></p></li>
+<li><p>Segundo, añadir nombre y descripción de nuestro repositorio online. Asegurarse de que el repositorio es ‘public’ y no seleccionar la inicialización con el fichero README. Finalmente, hacer click en “Create repository”.</p></li>
+<li><p>Tercero, clonar el repositorio que acabamos de crear, y que está vacío, en nuestro ordenador:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/&lt;my-github-name&gt;/&lt;my-repository-name&gt;
+</pre></div>
+</div>
+</li>
+<li><p>Cuarto, copiar todos los ficheros y carpetas del libro a la carpeta local recién clonada. Por ejemplo, si el libro fue generado con <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">create</span> <span class="pre">mylocalbook</span></code> y el repositorio se llama <code class="docutils literal notranslate"><span class="pre">myonlinebook</span></code>, el comando a ejecutar sería:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp -r mylocalbook/* myonlinebook/
+</pre></div>
+</div>
+</li>
+<li><p>Quinto, sincronizar el repositorio local y el repositorio remoto. Para ello es necesario ejecutar los siguientes comandos:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> myonlinebook
+git add ./*
+git commit -m <span class="s2">&quot;subiendo mi libro ejemplo&quot;</span>
+git push
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Ver más información sobre cómo utilizar varios <a class="reference external" href="https://jupyterbook.org/publish/gh-pages.html">servicios de alojamiento online</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -327,7 +621,6 @@ Jupyter Book y muchas de las herramientas que utiliza están promovidas por <a c
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="installation.html" title="next page"><span class="section-number">1. </span>Instalación</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
