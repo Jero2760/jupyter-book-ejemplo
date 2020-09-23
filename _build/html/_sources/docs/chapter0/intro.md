@@ -66,5 +66,6 @@ Jupyter Book es una open community que agradece el feedback, input y las muestra
 ## Agradecimientos
 
 Jupyter Book cuenta con el soporte de una [comunidad abierta](https://github.com/executablebooks/jupyter-book/graphs/contributors), muchos de cuyos integrantes han participado en [the Jupyter community](https://jupyter.org/community).
+
 Jupyter Book y muchas de las herramientas que utiliza están promovidas por [the Executable Book Project](https://executablebooks.org), que a su vez cuenta con el apoyo de [the Alfred P. Sloan foundation](https://sloan.org/grant-detail/9231).
 

@@ -34,7 +34,7 @@ repository:
 
 launch_buttons:
   notebook_interface: "classic" # The interface interactive links will activate ["classic", "jupyterlab"]
-  binderhub_url: "https://mybinder.org/v2/gh/Jero2760/jupyter-book-ejemplo/master"
+  binderhub_url: "https://mybinder.org/"
   colab_url: "https://colab.research.google.com"
   thebe: true
 
