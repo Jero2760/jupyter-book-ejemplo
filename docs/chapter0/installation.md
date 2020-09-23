@@ -39,7 +39,7 @@ pip install -U jupyter-book
 
 Jupyter Book ha sido testado con Windows OS 😀
 
-Sin embargo, existe una incompatibilidad, ya conocida, para ejecutar ficehros notebooks con Python 3.8.
+Sin embargo, existe una incompatibilidad, ya conocida, para ejecutar ficheros notebook con Python 3.8.
 
 <!---See [](working-on-windows)--->
 
