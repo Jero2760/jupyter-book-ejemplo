@@ -35,7 +35,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
     Ver [la página getting started](https://jupyterbook.org/start/overview) para más información.
     ````
 
-3. Instalamos las librerías Python necesarias utilizando [este fichero `environment.yml` file](https://github.com/executablebooks/quantecon-mini-example/blob/master/environment.yml).
+3. Instalamos las librerías Python necesarias utilizando [este fichero `environment.yml` file](https://github.com/Jero2760/jupyter-book-ejemplo/blob/master/environment.yml).
    Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:
 
 	```shell
@@ -61,7 +61,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
 	conda activate jupyter-book-ejemplo
 	```
 
-De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí qe-mini-example, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.
+De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí `jupyter-book-ejemplo`, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.
 
 
 4. Ejecutar Jupyter Book para generar el libro ejemplo, desde la carpeta que contiene jupyter-book-ejemplo:
@@ -84,8 +84,8 @@ jupyter-book build jupyter-book-ejemplo/
 
 ### Más información
 
-Ver [el libro completo en QuantEcon](https://executablebooks.github.io/quantecon-example/docs/index.html)
-con todo el contenido de un Jupyter Book con diversos casos de uso.
+Ver un libro completo muy informativo creado con Jupyter Book en [QuantEcon](https://executablebooks.github.io/quantecon-example/docs/index.html)
+con gran variedad de casos de uso.
 
 Para más información sobre el proyecto Jupyter Book, ver toda la documentación en [The Executable Book Project](https://ebp.jupyterbook.org/).
 
