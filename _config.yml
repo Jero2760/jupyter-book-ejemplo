@@ -20,13 +20,12 @@ parse:
   myst_extended_syntax: true
 
 html:
-  favicon: images/favicon.ico
   google_analytics_id: UA-52617120-7
   home_page_in_navbar: false
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
-  baseurl: https://jupyterbook.org/
+  baseurl: https://publiconsulting.com/
 
 repository:
   url: https://github.com/Jero2760/jupyter-book-ejemplo
@@ -83,14 +82,6 @@ sphinx:
       sphinx-panels:
         - https://sphinx-panels.readthedocs.io/en/sphinx-book-theme/
         - null
-    rediraffe_branch: 'master'
-    rediraffe_redirects:
-      content-types/index.md: file-types/index.md
-      content-types/markdown.md: file-types/markdown.md
-      content-types/notebooks.ipynb: file-types/notebooks.ipynb
-      content-types/myst-notebooks.md: file-types/myst-notebooks.md
-      content-types/jupytext.md: file-types/jupytext.Rmd
-      content-types/restructuredtext.md: file-types/restructuredtext.md
 
   extra_extensions:
     - sphinx_click.ext

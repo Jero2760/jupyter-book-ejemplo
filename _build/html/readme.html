@@ -1,12 +1,11 @@
 
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Index &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
+    <title>¿Cómo crear libros interactivos con Jupyter Book? &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -29,8 +28,6 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
-    <script src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
-    <script src="_static/sphinx_tabs/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
@@ -41,8 +38,8 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://publiconsulting.com/genindex.html" />
-    <link rel="index" title="Index" href="#" />
+    <link rel="canonical" href="https://publiconsulting.com/readme.html" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,10 +47,10 @@
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://publiconsulting.com/genindex.html" />
+<meta property="og:url"         content="https://publiconsulting.com/readme.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="¿Cómo crear un libro interactivo con Jupyter Book?" />
-<meta property="og:description" content="" />
+<meta property="og:title"       content="¿Cómo crear libros interactivos con Jupyter Book?" />
+<meta property="og:description" content="¿Cómo crear libros interactivos con Jupyter Book?  Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de progr" />
 <meta property="og:image"       content="https://publiconsulting.com/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -156,6 +153,18 @@
             class="fas fa-download"></i></button>
 
     
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/readme.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
 </div>
         <!-- Source interaction buttons -->
 
@@ -168,10 +177,12 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/Jero2760/jupyter-book-ejemplo/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jero2760/jupyter-book-ejemplo/issues/new?title=Issue%20on%20page%20%2Freadme.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
+        <a class="edit-button" href="https://github.com/Jero2760/jupyter-book-ejemplo/edit/master/docs/readme.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
@@ -187,8 +198,28 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   Jupyter Book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#colabora">
+   Colabora
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agradecimientos">
+   Agradecimientos
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -197,13 +228,58 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="como-crear-libros-interactivos-con-jupyter-book">
+<h1>¿Cómo crear libros interactivos con Jupyter Book?<a class="headerlink" href="#como-crear-libros-interactivos-con-jupyter-book" title="Permalink to this headline">¶</a></h1>
+<p>Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de programación que puede ser ejecutado y modificado a voluntad. Son libros ideales para cursos de programación y todo tipo de publicaciones que insertan código fuente.</p>
+<p>A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book.</p>
+<div class="section" id="jupyter-book">
+<h2>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Book es una herramienta open-source para crear libros y documentos PDF de calidad, con contenidos interactivos de programas informáticos.</p>
+<p>Jupyter Book permite a los usuarios</p>
+<ul class="simple">
+<li><p>escribir contenidos en <a class="reference external" href="https://jupyterbook.org/file-types/markdown">ficheros markdown (.md)</a> y <a class="reference external" href="https://jupyterbook.org/file-types/notebooks">Jupyter Notebooks (.ipynb)</a>,</p></li>
+<li><p>incluir elementos de programación (ej. código de programación) en ambos tipos, markdown y notebooks,</p></li>
+<li><p>incluir referencias bibliográficas y ecuaciones matemáticas, y</p></li>
+<li><p>usar un comando para ejecutar código embebido, <a class="reference external" href="https://jupyter-cache.readthedocs.io/en/latest/">cache</a> el resultado y, finalmente,</p></li>
+<li><p>convertir el contenido de los ficheros markdown y notebooks en:</p>
+<ul>
+<li><p>un libro interactivo para verlo en un browser (web-based interactive book) y</p></li>
+<li><p>una publicación PDF de calidad.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="colabora">
+<h2>Colabora<a class="headerlink" href="#colabora" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Book es una open community que agradece el feedback, input y las colaboraciones: <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">comunidad Jupyter Book</a></p>
+<p>En español puedes contactar con <a class="reference external" href="https://www.publiconsulting.com/about.html">Publiconsulting Media</a> para comentarios y aplicaciones de Jupyter Book.</p>
+</div>
+<div class="section" id="agradecimientos">
+<h2>Agradecimientos<a class="headerlink" href="#agradecimientos" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Book cuenta con el soporte de una <a class="reference external" href="https://github.com/executablebooks/jupyter-book/graphs/contributors">comunidad abierta</a>, muchos de cuyos integrantes han participado en <a class="reference external" href="https://jupyter.org/community">the Jupyter community</a>.</p>
+<p>Jupyter Book y muchas de las herramientas que utiliza están promovidas por <a class="reference external" href="https://executablebooks.org">the Executable Book Project</a>, que a su vez cuenta con el apoyo de <a class="reference external" href="https://sloan.org/grant-detail/9231">the Alfred P. Sloan foundation</a>.</p>
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "Jero2760/jupyter-book-ejemplo",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
