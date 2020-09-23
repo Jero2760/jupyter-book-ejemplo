@@ -4,7 +4,7 @@ Una vez que tenemos instalado [Anaconda Python](https://www.anaconda.com/distrib
 
 ## Libro ejemplo
 
-Para ello, vamos a partir de [un breve ejemplo](https://executablebooks.github.io/quantecon-mini-example/docs/index.html) de un libro interactivo creado con Jupyter Book.
+Para ello, vamos a partir de este mismo ejemplo de libro interactivo creado con Jupyter Book, recreándolo a partir del repositorio que lo contiene en Github.
 
 Algunas de las funcionalidades incluidas en este libro son:
 
@@ -13,8 +13,8 @@ Algunas de las funcionalidades incluidas en este libro son:
 * [Ecuaciones matemáticas, numeradas para referenciar](https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#another-application)
 * [Figuras, numeradas para referenciar](https://executablebooks.github.io/quantecon-mini-example/docs/getting_started.html#jupyter-notebooks) con leyendas explicativas y referencias cruzadas
 
-Los ficheros se encuentran [alojados en GitHub](https://github.com/executablebooks/quantecon-mini-example/)
-en la carpeta [docs](https://github.com/executablebooks/quantecon-mini-example/tree/master/mini_book/docs).
+Los ficheros se encuentran [alojados en GitHub](https://github.com/Jero2760/jupyter-book-ejemplo/)
+en la carpeta [docs](https://github.com/Jero2760/jupyter-book-ejemplo/docs/).
 El contenido está escrito en [MyST markdown](https://jupyterbook.org/content/myst), una extensión de Jupyter notebook markdown que permite incluir markup científico. Igualmente, podrían estar escritos en Jupyter notebooks.
 
 **Construir el libro ejemplo**
@@ -26,8 +26,8 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
 2. Clonamos el repositorio de Github que contiene los ficheros del libro ejemplo:
 
     ```bash
-    git clone https://github.com/executablebooks/quantecon-mini-example
-    cd quantecon-mini-example
+    git clone https://github.com/Jero2760/jupyter-book-ejemplo/
+    cd jupyter-book-ejemplo
     ```
 
     ````{margin}
@@ -39,7 +39,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
    Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:
 
 	```shell
-	name: qe-mini-example
+	name: jupyter-book-ejemplo
 	channels:
   	  - default
 	dependencies:
@@ -49,35 +49,37 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
   	  - pandas
   	  - matplotlib
   	  - pip:
-        - quantecon
         - jupyter-book
+        - sphinx-click
+        - jupytext
+        - pyppeteer
 	```
 
 	La instalación se lleva a cabo en Terminal, con los comandos:
 	```shell
 	conda env create -f environment.yml
-	conda activate qe-mini-example
+	conda activate jupyter-book-ejemplo
 	```
 
 De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí qe-mini-example, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.
 
 
-4. Ejecutar Jupyter Book para generar el libro ejemplo
+4. Ejecutar Jupyter Book para generar el libro ejemplo, desde la carpeta que contiene jupyter-book-ejemplo:
 
     ```bash
-    jupyter-book build mini_book/
+    jupyter-book build jupyter-book-ejemplo/
     ```
 
 5. Ver el resultado en cualquier browser haciendo doble-click en el fichero `html` siguiente:
 
     ```bash
-    mini_book/_build/html/index.html
+    jupyter-book-ejemplo/_build/html/index.html
     ```
 
-Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en ``mini_book/docs``. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando `build`: 
+Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en ``jupyter-book-ejemplo/docs``. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando `build`: 
 
 ```bash
-jupyter-book build mini_book/
+jupyter-book build jupyter-book-ejemplo/
 ```
 
 ### Más información

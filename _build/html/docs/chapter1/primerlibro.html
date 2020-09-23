@@ -182,7 +182,7 @@
             href="https://github.com/Jero2760/jupyter-book-ejemplo/issues/new?title=Issue%20on%20page%20%2Fdocs/chapter1/primerlibro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/Jero2760/jupyter-book-ejemplo/edit/master/docs/chapter1/primerlibro.md"><button
+        <a class="edit-button" href="https://github.com/Jero2760/jupyter-book-ejemplo/edit/master/docs/docs/chapter1/primerlibro.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -232,7 +232,7 @@
 <p>Una vez que tenemos instalado <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda Python</a>, tal y como hemos visto en el <a class="reference internal" href="../chapter0/installation.html"><span class="doc std std-doc">capítulo inicial</span></a>, ya podemos crear nuestro primer libro.</p>
 <div class="section" id="libro-ejemplo">
 <h2><span class="section-number">1.1. </span>Libro ejemplo<a class="headerlink" href="#libro-ejemplo" title="Permalink to this headline">¶</a></h2>
-<p>Para ello, vamos a partir de <a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/index.html">un breve ejemplo</a> de un libro interactivo creado con Jupyter Book.</p>
+<p>Para ello, vamos a partir de este mismo ejemplo de libro interactivo creado con Jupyter Book, recreándolo a partir del repositorio que lo contiene en Github.</p>
 <p>Algunas de las funcionalidades incluidas en este libro son:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#version-1">Jupyter notebooks</a></p></li>
@@ -240,16 +240,16 @@
 <li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#another-application">Ecuaciones matemáticas, numeradas para referenciar</a></p></li>
 <li><p><a class="reference external" href="https://executablebooks.github.io/quantecon-mini-example/docs/getting_started.html#jupyter-notebooks">Figuras, numeradas para referenciar</a> con leyendas explicativas y referencias cruzadas</p></li>
 </ul>
-<p>Los ficheros se encuentran <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/">alojados en GitHub</a>
-en la carpeta <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/tree/master/mini_book/docs">docs</a>.
+<p>Los ficheros se encuentran <a class="reference external" href="https://github.com/Jero2760/jupyter-book-ejemplo/">alojados en GitHub</a>
+en la carpeta <a class="reference external" href="https://github.com/Jero2760/jupyter-book-ejemplo/docs/">docs</a>.
 El contenido está escrito en <a class="reference external" href="https://jupyterbook.org/content/myst">MyST markdown</a>, una extensión de Jupyter notebook markdown que permite incluir markup científico. Igualmente, podrían estar escritos en Jupyter notebooks.</p>
 <p><strong>Construir el libro ejemplo</strong></p>
 <p>Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos siguientes:</p>
 <ol>
 <li><p>En primer lugar, vamos a crear un entorno virtual de trabajo donde instalar las librerías necesarias de Python para ejecutar el código fuente de nuestro primer libro. Una forma sencilla de hacerlo es a través de un fichero environment.yml, como veremos a continuación.</p></li>
 <li><p>Clonamos el repositorio de Github que contiene los ficheros del libro ejemplo:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/executablebooks/quantecon-mini-example
-<span class="nb">cd</span> quantecon-mini-example
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/Jero2760/jupyter-book-ejemplo/
+<span class="nb">cd</span> jupyter-book-ejemplo
 </pre></div>
 </div>
 <div class="margin sidebar">
@@ -259,7 +259,7 @@ El contenido está escrito en <a class="reference external" href="https://jupyte
 </li>
 <li><p>Instalamos las librerías Python necesarias utilizando <a class="reference external" href="https://github.com/executablebooks/quantecon-mini-example/blob/master/environment.yml">este fichero <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file</a>.
 Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>name: qe-mini-example
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>name: jupyter-book-ejemplo
 channels:
   - default
 dependencies:
@@ -269,32 +269,34 @@ dependencies:
   - pandas
   - matplotlib
   - pip:
-    - quantecon
     - jupyter-book
+    - sphinx-click
+    - jupytext
+    - pyppeteer
 </pre></div>
 </div>
 <p>La instalación se lleva a cabo en Terminal, con los comandos:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda env create -f environment.yml
-conda activate qe-mini-example
+conda activate jupyter-book-ejemplo
 </pre></div>
 </div>
 </li>
 </ol>
 <p>De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí qe-mini-example, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.</p>
 <ol>
-<li><p>Ejecutar Jupyter Book para generar el libro ejemplo</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build mini_book/
+<li><p>Ejecutar Jupyter Book para generar el libro ejemplo, desde la carpeta que contiene jupyter-book-ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build jupyter-book-ejemplo/
 </pre></div>
 </div>
 </li>
 <li><p>Ver el resultado en cualquier browser haciendo doble-click en el fichero <code class="docutils literal notranslate"><span class="pre">html</span></code> siguiente:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mini_book/_build/html/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book-ejemplo/_build/html/index.html
 </pre></div>
 </div>
 </li>
 </ol>
-<p>Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en <code class="docutils literal notranslate"><span class="pre">mini_book/docs</span></code>. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando <code class="docutils literal notranslate"><span class="pre">build</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build mini_book/
+<p>Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en <code class="docutils literal notranslate"><span class="pre">jupyter-book-ejemplo/docs</span></code>. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando <code class="docutils literal notranslate"><span class="pre">build</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build jupyter-book-ejemplo/
 </pre></div>
 </div>
 <div class="section" id="mas-informacion">
