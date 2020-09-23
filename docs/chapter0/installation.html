@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>1. Instalación &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://publiconsulting.com/docs/chapter0/installation.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1. Mi primer libro" href="../chapter1/primerlibro.html" />
+    <link rel="prev" title="¿Cómo crear libros interactivos con Jupyter Book?" href="intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://publiconsulting.com/docs/chapter0/installation.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Instalación" />
+<meta property="og:description" content="Instalación  Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en f" />
+<meta property="og:image"       content="https://publiconsulting.com/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">¿Cómo crear un libro interactivo con Jupyter Book?</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="caption">
+ <span class="caption-text">
+  Inicio
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1. Instalación
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Contenido
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter1/primerlibro.html">
+   1. Mi primer libro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter2/contenidos.html">
+   2. Tipos de contenidos
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter3/publish.html">
+   3. Publicar el libro online
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs/chapter0/installation.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Jero2760/jupyter-book-ejemplo"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Jero2760/jupyter-book-ejemplo/issues/new?title=Issue%20on%20page%20%2Fdocs/chapter0/installation.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/Jero2760/jupyter-book-ejemplo/edit/master/docs/chapter0/installation.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#el-entorno-anaconda">
+   1.1. El entorno Anaconda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   1.2. Jupyter Book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recomendacion-jupyter-lab">
+   1.3. Recomendación: Jupyter Lab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     1.3.1. Instalación
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conda">
+     1.3.2. conda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pip">
+     1.3.3. pip
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#instalacion-con-versiones-anteriores-de-jupyter-notebook">
+       1.3.3.1. Instalación con versiones anteriores de Jupyter Notebook
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ejecutar-jupyterlab">
+     1.3.4. Ejecutar JupyterLab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#browsers-soportados">
+     1.3.5. Browsers soportados
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="instalacion">
+<h1><span class="section-number">1. </span>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h1>
+<p>Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en ficheros de tipo Markdown y Jupyter Notebooks. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> convierte estos ficheros a formato HTML y PDF. De esta manera, el libro puede leerse en cualquier browser, subirlo a un servicio cloud o server host, así como imprimir y distribuir el fichero PDF generado.</p>
+<p>La utilización de Jupyter Book está especialmente indicada para crear libros interactivos que permiten ejecutar código fuente de programación utilizando Jupyter Notebooks. Esto es especialmente recomendable para libros sobre programación, aprendizaje automático (Machine Learning) e Inteligencia Artificial (AI) en general.</p>
+<div class="section" id="el-entorno-anaconda">
+<h2><span class="section-number">1.1. </span>El entorno Anaconda<a class="headerlink" href="#el-entorno-anaconda" title="Permalink to this headline">¶</a></h2>
+<p>Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es recomendable tener instalado el entorno Anaconda (o miniconda, una versión reducida que ocupa mucho menos espacio):</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x">Installing Anaconda on Mac OS X</a></p></li>
+<li><p><a class="reference external" href="https://katiekodes.com/setup-python-windows-miniconda/">Setting up Python on Windows with Miniconda by Anaconda</a></p></li>
+</ul>
+</div>
+<div class="section" id="jupyter-book">
+<h2><span class="section-number">1.2. </span>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>Para utilizar Jupyter Book, se puede comenzar con</p>
+<ul class="simple">
+<li><p>la guía de utilización <a class="reference external" href="https://jupyterbook.org/start/overview">getting started guide</a>,</p></li>
+<li><p>el menu de navegación de este libro (a la izquierda, en una ordenador de sobremesa), y también</p></li>
+<li><p>el libro ejemplo que se explica en los siguientes capítulos.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Jupyter Book <code class="docutils literal notranslate"><span class="pre">0.7</span></code> es una versión que reescribe completamente la versión <code class="docutils literal notranslate"><span class="pre">0.6</span></code> y tiene numerosos cambios.
+Ver <a class="reference external" href="https://github.com/executablebooks/jupyter-book/wiki/The-Jupyter-Book-Wiki">the legacy upgrade guide</a>
+para actualizaciones y <a class="reference external" href="https://legacy.jupyterbook.org">legacy.jupyterbook.org</a> para
+ver la documentación de anteriores versiones.</p>
+<p>Es importante saber que Jupyter Book todavía está en una versión pre-1.0 y, por lo tanto, previsiblemente irá incorporando cambios importantes en su API en los próximos meses.</p>
+</div>
+<p>Para instalar <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> desde pip, se utiliza el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -U jupyter-book
+</pre></div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title"> A note for Windows users</p>
+<p>Jupyter Book is now also tested against Windows OS 😀</p>
+<p>However, there is a known incompatibility for notebook execution, when using Python 3.8.</p>
+<!---See [](working-on-windows)--->
+<p>See <a class="reference external" href="https://jupyterbook.org/advanced/advanced.html#working-on-windows">Working on Windows</a></p>
+</div>
+<p>Para saber más sobre Jupyter Notebooks esta es la <a class="reference external" href="https://jupyter.readthedocs.io/en/latest/content-quickstart.html">documentación oficial (en inglés)</a></p>
+<p>Sobre cómo crear el entorno de desarrollo para Jupyter Notebook, en español, puede verse <a class="reference external" href="https://www.aprendemachinelearning.com/instalar-ambiente-de-desarrollo-python-anaconda-para-aprendizaje-automatico/">Instalar entorno de desarrollo Python Anaconda para Aprendizaje Automático</a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="recomendacion-jupyter-lab">
+<h2><span class="section-number">1.3. </span>Recomendación: Jupyter Lab<a class="headerlink" href="#recomendacion-jupyter-lab" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Lab es un entorno que en el futuro próximo sustituirá al clásico Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.). <a class="reference external" href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Listo para usuarios.</a></p>
+<p><a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es la nueva propuesta interactiva del <a class="reference external" href="https://jupyter.org">Proyecto Jupyter</a> que incorpora una más potente y flexible interfaz de usuario.</p>
+<p>JupyterLab permite incorporar extensiones utilizando paquetes <a class="reference external" href="https://www.npmjs.com/">npm</a> que usan APIs públicas de Jupyter. Para encontrar extensiones JupyterLab, buscar el término npm en <a class="reference external" href="https://www.npmjs.com/search?q=keywords:jupyterlab-extension">jupyterlab-extension</a> o buscar en GitHub <a class="reference external" href="https://github.com/topics/jupyterlab-extension">jupyterlab-extension</a>. Para más información sobre extensiones, ver la <a class="reference external" href="https://jupyterlab.readthedocs.io/en/latest/user/extensions.html">documentación de usuario</a>.</p>
+<p>Ver la última versión de la documentación en <a class="reference external" href="http://jupyterlab.readthedocs.io/en/latest/">ReadTheDocs</a>.</p>
+<div class="section" id="id1">
+<h3><span class="section-number">1.3.1. </span>Instalación<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>JupyterLab puede instalarse usando <code class="docutils literal notranslate"><span class="pre">conda</span></code> o <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Para instrucciones detalladas, consultar la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">installation guide</a>.</p>
+</div>
+<div class="section" id="conda">
+<h3><span class="section-number">1.3.2. </span>conda<a class="headerlink" href="#conda" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyterlab
+</pre></div>
+</div>
+</div>
+<div class="section" id="pip">
+<h3><span class="section-number">1.3.3. </span>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab
+</pre></div>
+</div>
+<div class="section" id="instalacion-con-versiones-anteriores-de-jupyter-notebook">
+<h4><span class="section-number">1.3.3.1. </span>Instalación con versiones anteriores de Jupyter Notebook<a class="headerlink" href="#instalacion-con-versiones-anteriores-de-jupyter-notebook" title="Permalink to this headline">¶</a></h4>
+<p>Cuando se usan versions de Jupyter Notebook anteriores a la versión 5.3, después de instalarse JupyterLab debe ejecutarse el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter serverextension <span class="nb">enable</span> --py jupyterlab --sys-prefix
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ejecutar-jupyterlab">
+<h3><span class="section-number">1.3.4. </span>Ejecutar JupyterLab<a class="headerlink" href="#ejecutar-jupyterlab" title="Permalink to this headline">¶</a></h3>
+<p>Para iniciar JupyterLab se usa el comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter lab
+</pre></div>
+</div>
+<p>JupyterLab se abrirá automaticamente en el browser. Ver la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html">documentación</a> para mayor información.</p>
+<p>Si encuentra un error tipo “Command ‘jupyter’ not found”, puede ser que la variable de entorno <code class="docutils literal notranslate"><span class="pre">PATH</span></code> no tenga la información correcta. Como alternativa, se puede arrancar JupyterLab usando <code class="docutils literal notranslate"><span class="pre">~/.local/bin/jupyter</span> <span class="pre">lab</span></code> sin cambiar la variable de entorno <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+</div>
+<div class="section" id="browsers-soportados">
+<h3><span class="section-number">1.3.5. </span>Browsers soportados<a class="headerlink" href="#browsers-soportados" title="Permalink to this headline">¶</a></h3>
+<p>Las últimas versiones de los siguientes browsers funcionan con Jupyter Lab:</p>
+<ul class="simple">
+<li><p>Firefox</p></li>
+<li><p>Chrome</p></li>
+<li><p>Safari</p></li>
+</ul>
+<p>Ver la <a class="reference external" href="http://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html">documentación</a> para más información.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "Jero2760/jupyter-book-ejemplo",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs/chapter0"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">¿Cómo crear libros interactivos con Jupyter Book?</a>
+    <a class='right-next' id="next-link" href="../chapter1/primerlibro.html" title="next page"><span class="section-number">1. </span>Mi primer libro</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Publiconsulting Media<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-52617120-7', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
