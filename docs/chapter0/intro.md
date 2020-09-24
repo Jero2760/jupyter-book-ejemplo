@@ -6,7 +6,7 @@ A continuación vamos a ver un ejemplo de un libro de programación interactivo 
 
 ## Jupyter Book
 
-Jupyter Book es una herramienta open-source para crear libros y documentos PDF de calidad, con contenidos interactivos de código fuente de programación informática.
+Jupyter Book es una herramienta open-source para crear libros y documentos PDF de calidad, con contenidos interactivos de código fuente de programación informática. Ver la [documentación en inglés](https://jupyterbook.org)
 
 Jupyter Book permite a los usuarios
 
@@ -62,10 +62,3 @@ Jupyter Book es una open community que agradece el feedback, input y las muestra
 : para comentarios e ideas en español.
 
 :::
-
-## Agradecimientos
-
-Jupyter Book cuenta con el soporte de una [comunidad abierta](https://github.com/executablebooks/jupyter-book/graphs/contributors), muchos de cuyos integrantes han participado en [the Jupyter community](https://jupyter.org/community).
-
-Jupyter Book y muchas de las herramientas que utiliza están promovidas por [the Executable Book Project](https://executablebooks.org), que a su vez cuenta con el apoyo de [the Alfred P. Sloan foundation](https://sloan.org/grant-detail/9231).
-

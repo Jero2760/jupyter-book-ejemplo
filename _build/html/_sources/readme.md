@@ -2,9 +2,7 @@
 
 Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de programación que puede ser ejecutado y modificado a voluntad. Son libros ideales para cursos de programación y todo tipo de publicaciones que insertan código fuente.
 
-A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book.
-
-Se puede acceder a la lectura del libro online [en este enlace](https://jero2760.github.io/jupyter-book-ejemplo).
+A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book. Se puede acceder a la lectura del libro online [en este enlace](https://jero2760.github.io/jupyter-book-ejemplo).
 
 ## Jupyter Book
 
@@ -25,11 +23,5 @@ Jupyter Book permite a los usuarios
 Jupyter Book es una open community que agradece el feedback, input y las colaboraciones: [comunidad Jupyter Book](https://github.com/executablebooks/jupyter-book/graphs/contributors)
 
 En español puedes contactar con [Publiconsulting Media](https://www.publiconsulting.com/about.html) para comentarios y aplicaciones de Jupyter Book.
-
-## Agradecimientos
-
-Jupyter Book cuenta con el soporte de una [comunidad abierta](https://github.com/executablebooks/jupyter-book/graphs/contributors), muchos de cuyos integrantes han participado en [the Jupyter community](https://jupyter.org/community).
-
-Jupyter Book y muchas de las herramientas que utiliza están promovidas por [the Executable Book Project](https://executablebooks.org), que a su vez cuenta con el apoyo de [the Alfred P. Sloan foundation](https://sloan.org/grant-detail/9231).
 
 
