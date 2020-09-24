@@ -12,6 +12,9 @@ Algunas de las funcionalidades incluidas en este libro son:
 * [Referencias bibliográficas](https://executablebooks.github.io/quantecon-mini-example/docs/about_py.html#bibliography)
 * [Ecuaciones matemáticas, numeradas para referenciar](https://executablebooks.github.io/quantecon-mini-example/docs/python_by_example.html#another-application)
 * [Figuras, numeradas para referenciar](https://executablebooks.github.io/quantecon-mini-example/docs/getting_started.html#jupyter-notebooks) con leyendas explicativas y referencias cruzadas
+* [Anotaciones online - hypothes.is ](https://jupyterbook.org/interactive/comments.html)
+* [Descarga del PDF del libro completo o por capítulos](https://jupyterbook.org/advanced/pdf.html)
+* [Acceso al código en la nube (ejecución y modificación) - Binder, Google Colab, etc.](https://jupyterbook.org/interactive/launchbuttons.html)
 
 Los ficheros se encuentran [alojados en GitHub](https://github.com/Jero2760/jupyter-book-ejemplo/)
 en la carpeta [docs](https://github.com/Jero2760/jupyter-book-ejemplo/docs/).
