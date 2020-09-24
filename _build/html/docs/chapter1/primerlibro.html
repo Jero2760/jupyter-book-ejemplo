@@ -257,7 +257,7 @@ El contenido está escrito en <a class="reference external" href="https://jupyte
 <p>Ver <a class="reference external" href="https://jupyterbook.org/start/overview">la página getting started</a> para más información.</p>
 </div>
 </li>
-<li><p>Instalamos las librerías Python necesarias utilizando <a class="reference external" href="https://github.com/Jero2760/jupyter-book-ejemplo/blob/master/environment.yml">este fichero <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file</a>.
+<li><p>Instalamos las librerías Python necesarias utilizando <a class="reference external" href="https://github.com/Jero2760/jupyter-book-ejemplo/blob/master/environment.yml">este fichero <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> </a>.
 Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>name: jupyter-book-ejemplo
 channels:
@@ -280,12 +280,11 @@ dependencies:
 conda activate jupyter-book-ejemplo
 </pre></div>
 </div>
+<p>De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 		3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí <code class="docutils literal notranslate"><span class="pre">jupyter-book-ejemplo</span></code>, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.</p>
 </li>
-</ol>
-<p>De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí <code class="docutils literal notranslate"><span class="pre">jupyter-book-ejemplo</span></code>, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.</p>
-<ol>
-<li><p>Ejecutar Jupyter Book para generar el libro ejemplo, desde la carpeta que contiene jupyter-book-ejemplo:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build jupyter-book-ejemplo/
+<li><p>Ejecutar Jupyter Book para generar el libro ejemplo, no desde la carpeta jupyter-book-ejemplo, sino desde la carpeta que lo contiene:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ..
+jupyter-book build jupyter-book-ejemplo/
 </pre></div>
 </div>
 </li>
@@ -293,12 +292,17 @@ conda activate jupyter-book-ejemplo
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book-ejemplo/_build/html/index.html
 </pre></div>
 </div>
-</li>
-</ol>
 <p>Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en <code class="docutils literal notranslate"><span class="pre">jupyter-book-ejemplo/docs</span></code>. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando <code class="docutils literal notranslate"><span class="pre">build</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build jupyter-book-ejemplo/
 </pre></div>
 </div>
+</li>
+<li><p>Finalizar el entorno virtual creado:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda deactivate
+</pre></div>
+</div>
+</li>
+</ol>
 <div class="section" id="mas-informacion">
 <h3><span class="section-number">1.1.1. </span>Más información<a class="headerlink" href="#mas-informacion" title="Permalink to this headline">¶</a></h3>
 <p>Ver un libro completo muy informativo creado con Jupyter Book en <a class="reference external" href="https://executablebooks.github.io/quantecon-example/docs/index.html">QuantEcon</a>

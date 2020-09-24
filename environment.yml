@@ -10,5 +10,6 @@ dependencies:
   - pip:
     - jupyter-book
     - sphinx-click
+    - sphinx-tabs
     - jupytext
     - pyppeteer

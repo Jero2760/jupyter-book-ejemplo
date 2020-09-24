@@ -35,7 +35,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
     Ver [la página getting started](https://jupyterbook.org/start/overview) para más información.
     ````
 
-3. Instalamos las librerías Python necesarias utilizando [este fichero `environment.yml` file](https://github.com/Jero2760/jupyter-book-ejemplo/blob/master/environment.yml).
+3. Instalamos las librerías Python necesarias utilizando [este fichero `environment.yml` ](https://github.com/Jero2760/jupyter-book-ejemplo/blob/master/environment.yml).
    Además, también se instalará la última versión de Jupyter Book. Este es el contenido de nuestro fichero evironment.yml:
 
 	```shell
@@ -61,12 +61,12 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
 	conda activate jupyter-book-ejemplo
 	```
 
-De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí `jupyter-book-ejemplo`, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.
+	De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Python 		3.7 y la última versión de Jupyter Book, así como también hemos creado y activado un entorno virtual, llamado aquí `jupyter-book-ejemplo`, que nos permite tener un contexto aislado donde crear el libro ejemplo, sin interferencias con otros posibles entornos instalados en nuestro ordenador.
 
-
-4. Ejecutar Jupyter Book para generar el libro ejemplo, desde la carpeta que contiene jupyter-book-ejemplo:
+4. Ejecutar Jupyter Book para generar el libro ejemplo, no desde la carpeta jupyter-book-ejemplo, sino desde la carpeta que lo contiene:
 
     ```bash
+    cd ..
     jupyter-book build jupyter-book-ejemplo/
     ```
 
@@ -76,11 +76,17 @@ De esta forma, conseguimos instalar las dependencias necesarias, entre ellas Pyt
     jupyter-book-ejemplo/_build/html/index.html
     ```
 
-Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en ``jupyter-book-ejemplo/docs``. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando `build`: 
+	Ahora, podemos hacer modificaciones a los ficheros fuente que forman el libro ejemplo y que se encuentran en ``jupyter-book-ejemplo/docs``. Para ver el resultado de nuestras modificaciones, se vuelve a generar el libro con el mismo comando `build`: 
 
-```bash
-jupyter-book build jupyter-book-ejemplo/
-```
+	```bash
+	jupyter-book build jupyter-book-ejemplo/
+	```
+
+6. Finalizar el entorno virtual creado:
+
+	```shell
+	conda deactivate
+	```
 
 ### Más información
 
