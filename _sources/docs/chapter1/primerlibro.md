@@ -51,6 +51,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
   	  - pip:
         - jupyter-book
         - sphinx-click
+        - sphinx-tabs
         - jupytext
         - pyppeteer
 	```
@@ -82,7 +83,7 @@ Para construir este libro ejemplo, vamos a hacerlo en Terminal, con los comandos
 	jupyter-book build jupyter-book-ejemplo/
 	```
 
-6. Finalizar el entorno virtual creado:
+6. Para salir del entorno virtual creado:
 
 	```shell
 	conda deactivate
