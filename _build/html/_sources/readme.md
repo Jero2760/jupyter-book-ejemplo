@@ -2,11 +2,13 @@
 
 Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de programación que puede ser ejecutado y modificado a voluntad. Son libros ideales para cursos de programación y todo tipo de publicaciones que insertan código fuente.
 
-A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book. 
+A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book.
+
+Se puede acceder a la lectura del libro online [en este enlace](https://jero2760.github.io/jupyter-book-ejemplo).
 
 ## Jupyter Book
 
-Jupyter Book es una herramienta open-source para crear libros y documentos PDF de calidad, con contenidos interactivos de programas informáticos.
+Jupyter Book es una herramienta open-source para crear libros y documentos PDF de calidad, con contenidos interactivos de programas informáticos. Ver la [documentación en inglés](https://jupyterbook.org)
 
 Jupyter Book permite a los usuarios
 
