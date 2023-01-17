@@ -13,7 +13,7 @@
   - file: docs/chapter2/contenidos
     sections:
       - file: docs/chapter2/markdown
-      - file: docs/chapter2/notebooks
+      - file: chapter2/notebooks
 
   - file: docs/chapter3/publish
 
