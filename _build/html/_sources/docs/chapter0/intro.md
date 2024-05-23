@@ -47,7 +47,7 @@ Por ejemplo, pueden incluirse fácilmente contenidos en formato editorial como [
 
 >¡Colabora con Jupyter Book!
 
-J>upyter Book es una open community que agradece el feedback, input y las muestras de interés.
+>Jupyter Book es una open community que agradece el feedback, input y las muestras de interés.
 
 >[Abir una cuestión (issue)](https://github.com/executablebooks/jupyter-book/issues/new/choose)
 : para proporcionar feedback y nuevas ideas o comunicar problemas.

@@ -27,6 +27,6 @@ parts:
 
 3. Luego se ejecuta:  jupyter-book build jupyter-book-ejemplo
 
-4. Y ya está añadido el nuevo notebook al libro. Se puedo ver haciendo doble click en index.html (en la carpeta _build/html). En este caso se ha creado un nuevo capítulo cuyo título es la primera línea del notebook añadido.
+4. Y ya está añadido el nuevo notebook al libro. Se puede ver haciendo doble click en index.html (en la carpeta _build/html). En este caso se ha creado un nuevo capítulo cuyo título es la primera línea del notebook añadido.
 
 Añadir un nuevo fichero .md se hace de forma similar. [Ver documentación](https://jupyterbook.org/en/stable/start/new-file.html)
