@@ -54,9 +54,9 @@ Que se visualiza como:
 Aquí hay una nota
 ```
 
-Cuando se genera el lbro con el comando `jupyterbook build`.
+cuando se genera/actualiza el lbro con el comando `jupyterbook build`.
 
-Para moás información sobre directivas, ver la
+Para más información sobre directivas, ver la
 [documentación sobre MyST](https://myst-parser.readthedocs.io/).
 
 +++

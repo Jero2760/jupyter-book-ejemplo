@@ -1,21 +1,17 @@
-# - file: readme
-- file: docs/chapter0/intro
+format: jb-book
+root: docs/chapter0/intro
+parts:
+- caption: Inicio
   numbered: true
-
-- part: Inicio
   chapters:
   - file: docs/chapter0/installation
-
-- part: Contenido
+- caption: Contenido
+  numbered: true
   chapters:
   - file: docs/chapter1/primerlibro
-  
   - file: docs/chapter2/contenidos
     sections:
-      - file: docs/chapter2/markdown
-      - file: docs/chapter2/notebooks
-
+    - file: docs/chapter2/markdown
+    - file: docs/chapter2/notebooks
+    - file: docs/chapter2/nuevo_contenido
   - file: docs/chapter3/publish
-
-
-

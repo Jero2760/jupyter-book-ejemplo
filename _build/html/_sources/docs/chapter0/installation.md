@@ -17,11 +17,11 @@ Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es re
 Para utilizar Jupyter Book, se puede comenzar con
 
 * la guía de utilización [getting started guide](https://jupyterbook.org/start/overview),
-* el menu de navegación de este libro (a la izquierda, en una ordenador de sobremesa), y también
+* el menu de navegación de este libro (a la izquierda, en un ordenador de sobremesa), y también
 * el libro ejemplo que se explica en los siguientes capítulos.
 
 :::{warning}
-Jupyter Book `0.7` es una versión que reescribe completamente la versión `0.6` y tiene numerosos cambios.
+Jupyter Book `1.0.0` es una versión de Mayo de 2024 que reescribe completamente las versiones anteriores.
 Ver [the legacy upgrade guide](https://github.com/executablebooks/jupyter-book/wiki/The-Jupyter-Book-Wiki)
 para actualizaciones y [legacy.jupyterbook.org](https://legacy.jupyterbook.org) para
 ver la documentación de anteriores versiones.
