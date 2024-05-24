@@ -26,7 +26,7 @@ Ver [the legacy upgrade guide](https://github.com/executablebooks/jupyter-book/w
 para actualizaciones y [legacy.jupyterbook.org](https://legacy.jupyterbook.org) para
 ver la documentación de anteriores versiones.
 
-Es importante saber que Jupyter Book todavía está en una versión pre-1.0 y, por lo tanto, previsiblemente irá incorporando cambios importantes en su API en los próximos meses.
+Es importante saber que Jupyter Book está en continua evolución y, por lo tanto, previsiblemente irá incorporando cambios importantes que pueden hacer que algunas funciones se vean afectadas en el futuro.
 ```
 
 Para instalar `jupyter-book` desde pip, se utiliza el siguiente comando:
