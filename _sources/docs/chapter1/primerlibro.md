@@ -18,7 +18,7 @@ Algunas de las funcionalidades incluidas en este libro son:
 
 Los ficheros se encuentran [alojados en GitHub](https://github.com/Jero2760/jupyter-book-ejemplo/)
 en la carpeta [docs](https://github.com/Jero2760/jupyter-book-ejemplo/docs/).
-El contenido está escrito en [MyST markdown](https://jupyterbook.org/content/myst), una extensión de Jupyter notebook markdown que permite incluir markup científico. Igualmente, podrían estar escritos en Jupyter notebooks.
+El contenido está escrito en [MyST markdown](https://jupyterbook.org/content/myst), una extensión de Jupyter notebook markdown que permite incluir markup científico, e incluye contenido escrito en Jupyter notebooks.
 
 **Construir el libro ejemplo**
 
