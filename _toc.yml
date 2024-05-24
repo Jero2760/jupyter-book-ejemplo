@@ -15,3 +15,7 @@ parts:
     - file: docs/chapter2/notebooks
     - file: docs/chapter2/nuevo_contenido
   - file: docs/chapter3/publish
+- caption: Configuración
+  numbered: true
+  chapters:
+  - file: docs/chapter4/config
