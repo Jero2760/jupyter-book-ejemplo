@@ -20,29 +20,31 @@ Para utilizar Jupyter Book, se puede comenzar con
 * el menu de navegación de este libro (a la izquierda, en un ordenador de sobremesa), y también
 * el libro ejemplo que se explica en los siguientes capítulos.
 
->Jupyter Book `1.0.0` es una versión de Mayo de 2024 que reescribe completamente las versiones anteriores.
+```{admonition} Nota
+Jupyter Book `1.0.0` es una versión de Mayo de 2024 que reescribe completamente las versiones anteriores.
 Ver [the legacy upgrade guide](https://github.com/executablebooks/jupyter-book/wiki/The-Jupyter-Book-Wiki)
 para actualizaciones y [legacy.jupyterbook.org](https://legacy.jupyterbook.org) para
 ver la documentación de anteriores versiones.
 
->Es importante saber que Jupyter Book todavía está en una versión pre-1.0 y, por lo tanto, previsiblemente irá incorporando cambios importantes en su API en los próximos meses.
+Es importante saber que Jupyter Book todavía está en una versión pre-1.0 y, por lo tanto, previsiblemente irá incorporando cambios importantes en su API en los próximos meses.
+```
 
 Para instalar `jupyter-book` desde pip, se utiliza el siguiente comando:
 
 ```bash
 pip install -U jupyter-book
 ```
+```{warning}
+Nota para usuarios de Windows
 
->Nota para usuarios de Windows
+Jupyter Book ha sido testado con Windows OS 😀
 
->Jupyter Book ha sido testado con Windows OS 😀
-
->Sin embargo, existe una incompatibilidad, ya conocida, para ejecutar ficheros notebook con Python 3.8.
+Sin embargo, existe una incompatibilidad, ya conocida, para ejecutar ficheros notebook con Python 3.8.
 
 <!---See [](working-on-windows)--->
 
->Ver [Working on Windows](https://jupyterbook.org/advanced/advanced.html#working-on-windows)
-
+Ver [Working on Windows](https://jupyterbook.org/advanced/advanced.html#working-on-windows)
+```
 
 Para saber más sobre Jupyter Notebooks esta es la [documentación oficial (en inglés)](https://jupyter.readthedocs.io/en/latest/content-quickstart.html) 
 

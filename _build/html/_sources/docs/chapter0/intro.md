@@ -45,19 +45,19 @@ Por ejemplo, pueden incluirse fácilmente contenidos en formato editorial como [
 
 ## Colabora
 
->¡Colabora con Jupyter Book!
+```{admonition} ¡Colabora con Jupyter Book!
 
->Jupyter Book es una open community que agradece el feedback, input y las muestras de interés.
+Jupyter Book es una open community que agradece el feedback, input y las muestras de interés.
 
->[Abir una cuestión (issue)](https://github.com/executablebooks/jupyter-book/issues/new/choose)
+[Abir una cuestión (issue)](https://github.com/executablebooks/jupyter-book/issues/new/choose)
 : para proporcionar feedback y nuevas ideas o comunicar problemas.
 
->{ref}`Votar por nuevas funcionalidades <ebp:feature-note>`
+{ref}`Votar por nuevas funcionalidades <ebp:feature-note>`
 : añadiendo 👍 a las cuestiones (issues) que deseas ver resueltas.
 
->[Contribuir a Jupyter Book](https://jupyterbook.org/contribute/intro.md)
+[Contribuir a Jupyter Book](https://jupyterbook.org/contribute/intro.md)
 : siguiendo nuestra guía de participación e identificando una cuestión (issue) para trabajar en su resolución. Ver {ref}`la tabla de votación de funcionalidades <ebp:feature-note>` como ejemplo.
 
->[En español puedes contactar con Publiconsulting Media](https://www.publiconsulting.com/about.html)
+[En español puedes contactar con Publiconsulting Media](https://www.publiconsulting.com/about.html)
 : para comentarios e ideas en español.
-
+```
