@@ -16,7 +16,7 @@ Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es re
 
 Para utilizar Jupyter Book, se puede comenzar con
 
-* la guía de utilización [getting started guide](https://jupyterbook.org/start/overview),
+* la guía de utilización [getting started guide](https://jupyterbook.org/en/stable/intro.html),
 * el menu de navegación de este libro (a la izquierda, en un ordenador de sobremesa), y también
 * el libro ejemplo que se explica en los siguientes capítulos.
 

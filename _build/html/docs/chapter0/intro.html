@@ -32,9 +32,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=ca93fcec" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -46,8 +48,9 @@
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../_static/copybutton.js?v=5eb1bb1e"></script>
+    <script src="../../_static/copybutton.js?v=b1422caa"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../_static/tabs.js?v=267a2eca"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -72,6 +75,8 @@
                 gtag('config', 'UA-52617120-7');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/chapter0/intro';</script>
     <link rel="canonical" href="https://publiconsulting.com/docs/chapter0/intro.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -424,7 +429,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="como-crear-libros-interactivos-con-jupyter-book">
+  <section class="tex2jax_ignore mathjax_ignore" id="como-crear-libros-interactivos-con-jupyter-book">
 <h1>¿Cómo crear libros interactivos con Jupyter Book?<a class="headerlink" href="#como-crear-libros-interactivos-con-jupyter-book" title="Link to this heading">#</a></h1>
 <p>Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de programación que puede ser ejecutado y modificado a voluntad.</p>
 <p>A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book.</p>
@@ -445,22 +450,24 @@ document.write(`
 </li>
 </ul>
 <p>Algunas de las funcionalidades principales de Jupyter Book son las siguientes:</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/file-types/markdown">Escribir contenidos en Markdown</a>
-: El contenido puede estar en Jupyter markdown, o bien en una versión de markdown extendido con <a class="reference external" href="https://jupyterbook.org/content/myst">funciones de publicación avanzada</a>.
+<dl class="simple myst">
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/file-types/markdown">Escribir contenidos en Markdown</a></dt><dd><p>El contenido puede estar en Jupyter markdown, o bien en una versión de markdown extendido con <a class="reference external" href="https://jupyterbook.org/content/myst">funciones de publicación avanzada</a>.
 Por ejemplo, pueden incluirse fácilmente contenidos en formato editorial como <a class="reference external" href="https://jupyterbook.org/content/citations">referencias bibliográficas</a>, <a class="reference external" href="https://jupyterbook.org/content/math">ecuaciones matemáticas</a> y <a class="reference external" href="https://jupyterbook.org/content/figures">gráficos</a>.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/file-types/notebooks">Añadir código fuente directamente como ficheros Jupyter Notebooks</a>
-: Esto permite incluir tanto el código como el resultado (output) de la ejecución directamente en el libro. Del mismo modo, también pueden escribirse notebooks <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks">enteramente en markdown</a> para ejecutar cuando se genera el libro con el comando ‘build’ como veremos más adelante.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/content/execute">Ejecutar y guardar en memoria cache el contenido del libro</a>
-: Para ficheros Notebooks<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, permite ejecutar código e insertar los últimos outputs.
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/file-types/notebooks">Añadir código fuente directamente como ficheros Jupyter Notebooks</a></dt><dd><p>Esto permite incluir tanto el código como el resultado (output) de la ejecución directamente en el libro. Del mismo modo, también pueden escribirse notebooks <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks">enteramente en markdown</a> para ejecutar cuando se genera el libro con el comando ‘build’ como veremos más adelante.</p>
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/content/execute">Ejecutar y guardar en memoria cache el contenido del libro</a></dt><dd><p>Para ficheros Notebooks<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, permite ejecutar código e insertar los últimos outputs.
 Esto permite además, <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/computation/execute.html#execute-cache" title="(in MyST-NB)"><span class="xref std std-ref">guardar en cache y re-utilizar</span></a> los outputs posteriormente.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/content:code-outputs">Insertar los outputs en el libro</a>
-: Se pueden insertar outputs a medida que se genera la documentación y añadirlos in-line con el resto de la página.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons">Añadir interactividad al libro</a>
-: Por ejemplo, se puede <a class="reference external" href="https://jupyterbook.org/interactive/hiding">alternar la visibilidad de una celda</a>, incluir <a class="reference external" href="https://jupyterbook.org/interactive/interactive">outputs interactivos</a> desde Jupyter y ejecutar el código <a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons">conectando con servicios online</a> como Binder, Google Colab y Deepnote.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/start/build">Generar libros en HTML, PDF y otros formatos</a>
-: Esto incluye single- y multi-page websites, así como <a class="reference external" href="https://jupyterbook.org/advanced/pdf">PDF</a>.</p>
-<p><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/reference/cli">Un libro se genera con un simple comando</a>
-: Por ejemplo, <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">mybook/</span></code></p>
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/content:code-outputs">Insertar los outputs en el libro</a></dt><dd><p>Se pueden insertar outputs a medida que se genera la documentación y añadirlos in-line con el resto de la página.</p>
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons">Añadir interactividad al libro</a></dt><dd><p>Por ejemplo, se puede <a class="reference external" href="https://jupyterbook.org/interactive/hiding">alternar la visibilidad de una celda</a>, incluir <a class="reference external" href="https://jupyterbook.org/interactive/interactive">outputs interactivos</a> desde Jupyter y ejecutar el código <a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons">conectando con servicios online</a> como Binder, Google Colab y Deepnote.</p>
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/start/build">Generar libros en HTML, PDF y otros formatos</a></dt><dd><p>Esto incluye single- y multi-page websites, así como <a class="reference external" href="https://jupyterbook.org/advanced/pdf">PDF</a>.</p>
+</dd>
+<dt><span class="fa fa-check,text-success mr-1"></span> <a class="reference external" href="https://jupyterbook.org/reference/cli">Un libro se genera con un simple comando</a></dt><dd><p>Por ejemplo, <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">mybook/</span></code></p>
+</dd>
+</dl>
 </section>
 <section id="colabora">
 <h2>Colabora<a class="headerlink" href="#colabora" title="Link to this heading">#</a></h2>

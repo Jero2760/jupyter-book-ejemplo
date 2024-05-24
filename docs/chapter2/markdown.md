@@ -24,6 +24,26 @@ MyST significa "Markedly Structured Text". Se trata de una ligera variante de un
 markdown llamado "CommonMark", con algunas extensiones que permiten añadir **roles** y **directivas**
 en el ecosistema de documentación Sphinx.
 
+## Escribir Ecuaciones matemáticas
+
+Al activar la extensión amsmath en _config.yml, podemos escribir expresiones matemáticas como:
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+
+\begin{gather*}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}\\
+\end{gather*}
+
+\begin{gather*}
+\nabla \times \vec{e}+\frac{\partial \vec{b}}{\partial t}&=0 \\
+\nabla \times \vec{h}-\vec{j}&=\vec{s}\_{e}
+\end{gather*}
+
 ## ¿Qué son roles y directivas?
 
 Roles y directivas son dos potentes herramientas de Jupyter Book similares a las funciones, pero escritas en un lenguaje de markup. Ambas buscan un propósito similar, pero los **roles se escriben en una sola línea** mientras que las **directivas ocupan varias líneas**. 
