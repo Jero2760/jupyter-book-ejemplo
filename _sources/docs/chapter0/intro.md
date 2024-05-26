@@ -1,5 +1,8 @@
 # ¿Cómo crear libros interactivos con Jupyter Book?
 
+```{index} Crear libros interactivos
+```
+
 Con las herramientas de Jupyter, podemos crear libros interactivos que combinan texto, HTML y código de programación que puede ser ejecutado y modificado a voluntad.
 
 A continuación vamos a ver un ejemplo de un libro de programación interactivo construido con Jupyter Book. 

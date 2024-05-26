@@ -1,5 +1,8 @@
 # Configuración
 
+```{index} Configuración
+```
+
 Jupyter Book utiliza un fichero de configuración que permite incluir numerosas funciones para personalizar los libros y crear experiencias interactivas con multitud de opciones.
 
 El fichero de configuración se llama `_config.yml` y se crea al hacer `jupyter-book create` o bien, en el caso de este libro ejemplo, se copia junto con todos los demás contenidos del libro al hacer `git clone` como se explica en el capítulo correspondiente ([ver Mi primer libro](https://jero2760.github.io/jupyter-book-ejemplo/docs/chapter1/primerlibro.html)).
@@ -13,7 +16,7 @@ Este es el fichero `_config.yml` del libro ejemplo:
 
 title: ¿Cómo crear un libro interactivo con Jupyter Book?
 author: Publiconsulting Media
-logo: logo.png
+logo: logo.png #indicar el path al fichero logo.png si está dentro de una carpeta en lugar de la raíz del directorio
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -27,7 +30,7 @@ exclude_patterns: [file-types/include-rst.rst]
 
 # Bibliography settings
 bibtex_bibfiles:
-    - docs/chapter2/references.bib
+    - docs/chapter2/references.bib #indicar el path al fichero references.bib
 
 # Information about where the book exists on the web
 repository:
@@ -151,12 +154,5 @@ sphinx:
     - sphinx_examples
 
 ```
-Algunos comentarios importantes:
-
-- El path al fichero que contiene la bibliografía debe especificarse de esta manera: 
-
->bibtex_bibfiles:
->    - docs/chapter2/references.bib
-
 
 Para entender esta configuración [ver la documentación](https://jupyterbook.org/en/stable/customize/config.html)

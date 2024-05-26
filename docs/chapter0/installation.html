@@ -32,10 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -79,7 +79,7 @@
     <link rel="canonical" href="https://publiconsulting.com/docs/chapter0/installation.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Mi primer libro" href="../chapter1/primerlibro.html" />
+    <link rel="next" title="2. Construir el libro ejemplo" href="../chapter1/primerlibro.html" />
     <link rel="prev" title="¿Cómo crear libros interactivos con Jupyter Book?" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -191,20 +191,25 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Instalación</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contenido</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Crear mi primer libro</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../chapter1/primerlibro.html">2. Mi primer libro</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/contenidos.html">3. Tipos de contenidos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter1/primerlibro.html">2. Construir el libro ejemplo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/contenidos.html">3. Añadir contenidos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/markdown.html">3.1. Ficheros Markdown (.md)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/notebooks.html">3.2. Jupyter Notebooks (.ipynb)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/nuevo_contenido.html">3.3. Cómo añadir nuevo contenido a nuestro libro</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter3/publish.html">4. Publicar el libro online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/indice.html">4. Añadir índice del libro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/publish.html">5. Publicar el libro online</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Configuración</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fichero de configuración</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../chapter4/config.html">5. Configuración</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/config.html">6. Configuración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Índice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
 </ul>
 
     </div>
@@ -443,11 +448,11 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="instalacion">
 <h1><span class="section-number">1. </span>Instalación<a class="headerlink" href="#instalacion" title="Link to this heading">#</a></h1>
-<p>Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en ficheros de tipo Markdown y Jupyter Notebooks. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> convierte estos ficheros a formato HTML y PDF. De esta manera, el libro puede leerse en cualquier browser, subirlo a un servicio cloud o server host, así como imprimir y distribuir el fichero PDF generado.</p>
+<p id="index-0">Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en ficheros de tipo Markdown y Jupyter Notebooks. <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> convierte estos ficheros a formato HTML y PDF. De esta manera, el libro puede leerse en cualquier browser, subirlo a un servicio cloud o server host, así como imprimir y distribuir el fichero PDF generado.</p>
 <p>La utilización de Jupyter Book está especialmente indicada para crear libros interactivos que permiten ejecutar código fuente de programación utilizando Jupyter Notebooks. Esto es especialmente recomendable para libros sobre programación, aprendizaje automático (Machine Learning) e Inteligencia Artificial (AI) en general.</p>
 <section id="el-entorno-anaconda">
 <h2><span class="section-number">1.1. </span>El entorno Anaconda<a class="headerlink" href="#el-entorno-anaconda" title="Link to this heading">#</a></h2>
-<p>Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es recomendable tener instalado el entorno Anaconda (o miniconda, una versión reducida que ocupa mucho menos espacio):</p>
+<p id="index-1">Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es recomendable tener instalado el entorno Anaconda (o miniconda, una versión reducida que ocupa mucho menos espacio):</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x">Installing Anaconda on Mac OS X</a></p></li>
 <li><p><a class="reference external" href="https://katiekodes.com/setup-python-windows-miniconda/">Setting up Python on Windows with Miniconda by Anaconda</a></p></li>
@@ -487,7 +492,7 @@ ver la documentación de anteriores versiones.</p>
 <hr class="docutils" />
 <section id="recomendacion-jupyter-lab">
 <h2><span class="section-number">1.3. </span>Recomendación: Jupyter Lab<a class="headerlink" href="#recomendacion-jupyter-lab" title="Link to this heading">#</a></h2>
-<p>Jupyter Lab es un entorno que en el futuro próximo sustituirá al clásico Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.). <a class="reference external" href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Listo para usuarios.</a></p>
+<p id="index-2">Jupyter Lab es un entorno que en el futuro próximo sustituirá al clásico Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.). <a class="reference external" href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Listo para usuarios.</a></p>
 <p><a class="reference external" href="http://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es la nueva propuesta interactiva del <a class="reference external" href="https://jupyter.org">Proyecto Jupyter</a> que incorpora una más potente y flexible interfaz de usuario.</p>
 <p>JupyterLab permite incorporar extensiones utilizando paquetes <a class="reference external" href="https://www.npmjs.com/">npm</a> que usan APIs públicas de Jupyter. Para encontrar extensiones JupyterLab, buscar el término npm en <a class="reference external" href="https://www.npmjs.com/search?q=keywords:jupyterlab-extension">jupyterlab-extension</a> o buscar en GitHub <a class="reference external" href="https://github.com/topics/jupyterlab-extension">jupyterlab-extension</a>. Para más información sobre extensiones, ver la <a class="reference external" href="https://jupyterlab.readthedocs.io/en/latest/user/extensions.html">documentación de usuario</a>.</p>
 <p>Ver la última versión de la documentación en <a class="reference external" href="http://jupyterlab.readthedocs.io/en/latest/">ReadTheDocs</a>.</p>
@@ -580,7 +585,7 @@ ver la documentación de anteriores versiones.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Mi primer libro</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Construir el libro ejemplo</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -1,10 +1,16 @@
 # Instalación
 
+```{index} Instalación
+```
+
 Esta es una guía para la creación de libros con la herramienta Jupyter Book. Para utilizar Jupyter Book, el contenido del libro debe guardarse en ficheros de tipo Markdown y Jupyter Notebooks. `jupyter-book` convierte estos ficheros a formato HTML y PDF. De esta manera, el libro puede leerse en cualquier browser, subirlo a un servicio cloud o server host, así como imprimir y distribuir el fichero PDF generado. 
 
 La utilización de Jupyter Book está especialmente indicada para crear libros interactivos que permiten ejecutar código fuente de programación utilizando Jupyter Notebooks. Esto es especialmente recomendable para libros sobre programación, aprendizaje automático (Machine Learning) e Inteligencia Artificial (AI) en general.
 
 ## El entorno Anaconda
+
+```{index} Anaconda
+```
 
 Aunque no es estrictamente necesario para crear un libro con Jupyter Book, es recomendable tener instalado el entorno Anaconda (o miniconda, una versión reducida que ocupa mucho menos espacio):
 
@@ -54,6 +60,9 @@ Sobre cómo crear el entorno de desarrollo para Jupyter Notebook, en español, p
 ---
 
 ## Recomendación: Jupyter Lab
+
+```{index} Jupyter Lab
+```
 
 Jupyter Lab es un entorno que en el futuro próximo sustituirá al clásico Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.). [Listo para usuarios.](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906)
 
