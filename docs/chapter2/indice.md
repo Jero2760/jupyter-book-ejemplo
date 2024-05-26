@@ -20,6 +20,6 @@ Sirve para añadir cualquier término a nuestro índice, por ejemplo:
 ```
 ````
 
-Para que aparezca el índice, hay que añadir un fichero .md en el directorio raíz con una sola línea de título (ejemplo # Índice) y modificar _toc.yml incluyendo este nuevo fichero. Al hacer el build del libro, se construte también la página de índices.
+Para que aparezca el índice, hay que añadir un fichero .md en el directorio raíz con una sola línea de título (ejemplo # Índice) y modificar `_toc.yml` incluyendo este nuevo fichero. Al hacer el build del libro, se crea también la página de índices.
 
 [Ver documentación completa](https://jupyterbook.org/en/stable/content/content-blocks.html#indexes)
