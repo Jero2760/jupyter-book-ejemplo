@@ -1,5 +1,8 @@
 # Publicar el libro online
 
+```{index} Publicar el libro online
+```
+
 Una vez generado nuestro libro, podemos subirlo a la nube, alojarlo en su servidor web y hacer que esté disponible para su lectura online. Puesto que el libro que hemos creado es, técnicamente, una página web estática, la mejor manera de lograrlo es a través de un servicio de alojamiento de **páginas web estáticas**. Hay muchas maneras de hacer esto y la siguientes secciones repasan las más habituales.
 
 ## Crear un repositorio online para nuestro libro

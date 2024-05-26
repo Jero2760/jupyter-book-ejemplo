@@ -1,4 +1,7 @@
-# Tipos de contenidos
+# Añadir contenidos
+
+```{index} Añadir contenidos
+```
 
 Jupyter Book admite muchos tipos de archivos para incluir en un libro. En general, estos son los tipos de contenido soportados por Jupyter Book:
 
@@ -15,5 +18,4 @@ Jupyter Book admite muchos tipos de archivos para incluir en un libro. En genera
 Para más información, ver la 
 [documentación sobre tipos de contenido](https://jupyterbook.org/en/stable/file-types/index.html).
 
-Existen diversos modos de escribir contenido en Jupyter Book. En los siguientes apartados de este capítulo se presentan algunas maneras de hacerlo, tanto en ficheros Jupyter Notebooks (.ipynb) como en ficheros markdown (.md) y se explica cómo añadir un fichero ipynb al libro.
-
+En los siguientes apartados de este capítulo se describen los formatos Markdown (.md) y Jupyter Notebook (.ipynb) y se explica cómo añadir un fichero Jupyter Notebook al libro. De forma similar se pueden añadir ficheros de texto enriquecido en Markdown (formato .md).

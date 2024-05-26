@@ -13,6 +13,13 @@ kernelspec:
   name: python3
 ---
 
+```{index} Roles y directivas
+```
+```{index} MyST
+```
+```{index} Ecuaciones matemáticas
+```
+
 # Ficheros Markdown (.md)
 
 Tanto si el contenido del libro se escribe en Jupyter Notebooks (`.ipynb`) como en

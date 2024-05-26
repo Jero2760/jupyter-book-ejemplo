@@ -1,4 +1,7 @@
-# Mi primer libro
+# Construir el libro ejemplo
+
+```{index} Crear mi primer libro
+```
 
 Una vez que tenemos instalado [Anaconda Python](https://www.anaconda.com/distribution/), tal y como hemos visto en el [capítulo inicial](/docs/chapter0/installation), ya podemos crear nuestro primer libro.
 

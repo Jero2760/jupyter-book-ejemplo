@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Mi primer libro &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
+    <title>2. Construir el libro ejemplo &#8212; ¿Cómo crear un libro interactivo con Jupyter Book?</title>
   
   
   
@@ -32,10 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -79,7 +79,7 @@
     <link rel="canonical" href="https://publiconsulting.com/docs/chapter1/primerlibro.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Tipos de contenidos" href="../chapter2/contenidos.html" />
+    <link rel="next" title="3. Añadir contenidos" href="../chapter2/contenidos.html" />
     <link rel="prev" title="1. Instalación" href="../chapter0/installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -191,20 +191,25 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../chapter0/installation.html">1. Instalación</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contenido</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Crear mi primer libro</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Mi primer libro</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/contenidos.html">3. Tipos de contenidos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Construir el libro ejemplo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/contenidos.html">3. Añadir contenidos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/markdown.html">3.1. Ficheros Markdown (.md)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/notebooks.html">3.2. Jupyter Notebooks (.ipynb)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/nuevo_contenido.html">3.3. Cómo añadir nuevo contenido a nuestro libro</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter3/publish.html">4. Publicar el libro online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter2/indice.html">4. Añadir índice del libro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3/publish.html">5. Publicar el libro online</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Configuración</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fichero de configuración</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../chapter4/config.html">5. Configuración</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter4/config.html">6. Configuración</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Índice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
 </ul>
 
     </div>
@@ -407,7 +412,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Mi primer libro</h1>
+    <h1>Construir el libro ejemplo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -432,9 +437,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="mi-primer-libro">
-<h1><span class="section-number">2. </span>Mi primer libro<a class="headerlink" href="#mi-primer-libro" title="Link to this heading">#</a></h1>
-<p>Una vez que tenemos instalado <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda Python</a>, tal y como hemos visto en el <a class="reference internal" href="../chapter0/installation.html"><span class="doc std std-doc">capítulo inicial</span></a>, ya podemos crear nuestro primer libro.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="construir-el-libro-ejemplo">
+<h1><span class="section-number">2. </span>Construir el libro ejemplo<a class="headerlink" href="#construir-el-libro-ejemplo" title="Link to this heading">#</a></h1>
+<p id="index-0">Una vez que tenemos instalado <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda Python</a>, tal y como hemos visto en el <a class="reference internal" href="../chapter0/installation.html"><span class="doc std std-doc">capítulo inicial</span></a>, ya podemos crear nuestro primer libro.</p>
 <section id="libro-ejemplo">
 <h2><span class="section-number">2.1. </span>Libro ejemplo<a class="headerlink" href="#libro-ejemplo" title="Link to this heading">#</a></h2>
 <p>Para ello, vamos a partir de este mismo ejemplo de libro interactivo creado con Jupyter Book, recreándolo a partir del repositorio que lo contiene en Github.</p>
@@ -565,7 +570,7 @@ con gran variedad de casos de uso.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Tipos de contenidos</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Añadir contenidos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
