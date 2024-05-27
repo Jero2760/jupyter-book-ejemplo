@@ -30,6 +30,10 @@ parts:
   numbered: true
   chapters:
   - file: docs/chapter4/config
+- caption: Nuevo contenido añadido
+  numbered: true
+  chapters:
+  - file: docs/chapter5/mi_nuevo_notebook
 - caption: Índice
   numbered: true
   chapters:
