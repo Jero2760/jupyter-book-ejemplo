@@ -446,8 +446,6 @@ execute:
 <span class="w">  </span>allow_errors:<span class="w"> </span><span class="nb">true</span>
 <span class="w">  </span>timeout:<span class="w"> </span><span class="m">120</span>
 
-exclude_patterns:<span class="w"> </span><span class="o">[</span>file-types/include-rst.rst<span class="o">]</span>
-
 <span class="c1"># Bibliography settings</span>
 bibtex_bibfiles:
 <span class="w">    </span>-<span class="w"> </span>docs/chapter2/references.bib<span class="w"> </span><span class="c1">#indicar el path al fichero references.bib</span>
@@ -503,15 +501,10 @@ sphinx:
 <span class="w">  </span>recursive_update:<span class="w"> </span><span class="nb">true</span>
 <span class="w">  </span>config:
 <span class="w">    </span>bibtex_reference_style:<span class="w"> </span>author_year<span class="w">  </span><span class="c1"># or label, super, \supercite</span>
-<span class="w">    </span><span class="c1"># unknown_mime_type - application/vnd.plotly.v1+json and application/vnd.bokehjs_load.v0+json</span>
-<span class="w">    </span><span class="c1"># domains - sphinx_proof.domain::prf needs to have `resolve_any_xref` method</span>
-<span class="w">    </span><span class="c1"># mime_priority - latex priority not set in myst_nb for text/html, application/javascript</span>
 <span class="w">    </span>suppress_warnings:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;mystnb.unknown_mime_type&quot;</span>,<span class="w"> </span><span class="s2">&quot;myst.domains&quot;</span>,<span class="w"> </span><span class="s2">&quot;mystnb.mime_priority&quot;</span><span class="o">]</span>
 <span class="w">    </span>copybutton_prompt_text:<span class="w"> </span><span class="s2">&quot;</span>$<span class="s2">&quot;</span>
 <span class="w">    </span>nb_execution_show_tb:<span class="w"> </span>True
 <span class="w">    </span>nb_execution_timeout:<span class="w"> </span><span class="m">120</span>
-<span class="c1">#    html_extra_path:</span>
-<span class="c1">#      - images/badge.svg</span>
 <span class="w">    </span>intersphinx_mapping:
 <span class="w">      </span>ebp:
 <span class="w">        </span>-<span class="w"> </span><span class="s2">&quot;https://executablebooks.org/en/latest/&quot;</span>
@@ -538,9 +531,6 @@ sphinx:
 <span class="w">          </span><span class="se">\n</span>ewcommand<span class="se">\f</span>loor<span class="o">[</span><span class="m">1</span><span class="o">]{</span><span class="se">\l</span>floor#1<span class="se">\r</span>floor<span class="o">}</span>
 <span class="w">          </span><span class="se">\n</span>ewcommand<span class="o">{</span><span class="se">\b</span>mat<span class="o">}{</span><span class="se">\l</span>eft<span class="o">[</span><span class="se">\b</span>egin<span class="o">{</span>array<span class="o">}}</span>
 <span class="w">          </span><span class="se">\n</span>ewcommand<span class="o">{</span><span class="se">\e</span>mat<span class="o">}{</span><span class="se">\e</span>nd<span class="o">{</span>array<span class="o">}</span><span class="se">\r</span>ight<span class="o">]}</span>
-<span class="w">    </span><span class="c1"># TODO: #917 this path will be the default in sphinx v4</span>
-<span class="w">    </span><span class="c1"># mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span>
-<span class="w">    </span><span class="c1"># However, it is incompatible with the mathjax config below for macros</span>
 <span class="w">    </span>mathjax3_config:
 <span class="w">      </span>tex:
 <span class="w">        </span>macros:
@@ -552,15 +542,6 @@ sphinx:
 <span class="w">      </span>.Rmd:
 <span class="w">        </span>-<span class="w"> </span>jupytext.reads
 <span class="w">        </span>-<span class="w"> </span>fmt:<span class="w"> </span>Rmd
-<span class="c1">#    rediraffe_branch: &#39;master&#39;</span>
-<span class="c1">#    rediraffe_redirects:</span>
-<span class="c1">#      content-types/index.md: file-types/index.md</span>
-<span class="c1">#      content-types/markdown.md: file-types/markdown.md</span>
-<span class="c1">#      content-types/notebooks.ipynb: file-types/notebooks.ipynb</span>
-<span class="c1">#      content-types/myst-notebooks.md: file-types/myst-notebooks.md</span>
-<span class="c1">#      content-types/jupytext.md: file-types/jupytext.Rmd</span>
-<span class="c1">#      content-types/restructuredtext.md: file-types/restructuredtext.md</span>
-<span class="c1">#      customize/toc.md: structure/toc.md</span>
 <span class="w">    </span>sd_fontawesome_latex:<span class="w"> </span>True
 
 <span class="w">    </span>html_theme_options:
@@ -569,7 +550,6 @@ sphinx:
 <span class="w">  </span>extra_extensions:
 <span class="w">    </span>-<span class="w"> </span>sphinx_click.ext
 <span class="w">    </span>-<span class="w"> </span>sphinx_inline_tabs
-<span class="c1">#    - sphinxext.rediraffe</span>
 <span class="w">    </span>-<span class="w"> </span>sphinx_proof
 <span class="w">    </span>-<span class="w"> </span>sphinx_examples
 </pre></div>

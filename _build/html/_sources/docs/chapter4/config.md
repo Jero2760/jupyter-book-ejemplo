@@ -26,8 +26,6 @@ execute:
   allow_errors: true
   timeout: 120
 
-exclude_patterns: [file-types/include-rst.rst]
-
 # Bibliography settings
 bibtex_bibfiles:
     - docs/chapter2/references.bib #indicar el path al fichero references.bib
@@ -83,15 +81,10 @@ sphinx:
   recursive_update: true
   config:
     bibtex_reference_style: author_year  # or label, super, \supercite
-    # unknown_mime_type - application/vnd.plotly.v1+json and application/vnd.bokehjs_load.v0+json
-    # domains - sphinx_proof.domain::prf needs to have `resolve_any_xref` method
-    # mime_priority - latex priority not set in myst_nb for text/html, application/javascript
     suppress_warnings: ["mystnb.unknown_mime_type", "myst.domains", "mystnb.mime_priority"]
     copybutton_prompt_text: "$"
     nb_execution_show_tb: True
     nb_execution_timeout: 120
-#    html_extra_path:
-#      - images/badge.svg
     intersphinx_mapping:
       ebp:
         - "https://executablebooks.org/en/latest/"
@@ -118,9 +111,6 @@ sphinx:
           \newcommand\floor[1]{\lfloor#1\rfloor}
           \newcommand{\bmat}{\left[\begin{array}}
           \newcommand{\emat}{\end{array}\right]}
-    # TODO: #917 this path will be the default in sphinx v4
-    # mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    # However, it is incompatible with the mathjax config below for macros
     mathjax3_config:
       tex:
         macros:
@@ -132,15 +122,6 @@ sphinx:
       .Rmd:
         - jupytext.reads
         - fmt: Rmd
-#    rediraffe_branch: 'master'
-#    rediraffe_redirects:
-#      content-types/index.md: file-types/index.md
-#      content-types/markdown.md: file-types/markdown.md
-#      content-types/notebooks.ipynb: file-types/notebooks.ipynb
-#      content-types/myst-notebooks.md: file-types/myst-notebooks.md
-#      content-types/jupytext.md: file-types/jupytext.Rmd
-#      content-types/restructuredtext.md: file-types/restructuredtext.md
-#      customize/toc.md: structure/toc.md
     sd_fontawesome_latex: True
 
     html_theme_options:
@@ -149,7 +130,6 @@ sphinx:
   extra_extensions:
     - sphinx_click.ext
     - sphinx_inline_tabs
-#    - sphinxext.rediraffe
     - sphinx_proof
     - sphinx_examples
 

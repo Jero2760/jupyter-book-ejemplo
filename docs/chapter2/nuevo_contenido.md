@@ -23,15 +23,13 @@ parts:
     - file: docs/chapter2/markdown
     - file: docs/chapter2/notebooks
     - file: docs/chapter2/nuevo_contenido
+  - file: docs/chapter2/indice
+  - file: docs/chapter2/interactividad
   - file: docs/chapter3/publish
 - caption: Fichero de configuración
   numbered: true
   chapters:
   - file: docs/chapter4/config
-- caption: Nuevo contenido
-  numbered: true
-  chapters:
-  - file: docs/chapter5/mi_nuevo_notebook.ipynb
 - caption: Índice
   numbered: true
   chapters:
